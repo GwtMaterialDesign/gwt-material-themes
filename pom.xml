@@ -3,15 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>gwt-material</artifactId>
+    <artifactId>gwt-material-parent</artifactId>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <version>1.3.4-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>gwt-material-themes</artifactId>
-  <version>1.3.4-SNAPSHOT</version>
 
   <name>Gwt Material Themes</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material.git</connection>
+    <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material.git</developerConnection>
+    <url>http://github.com/GwtMaterialDesign/gwt-material</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache License Version 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
 
 </project>
