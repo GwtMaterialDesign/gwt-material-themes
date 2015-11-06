@@ -14,9 +14,9 @@
   <name>Gwt Material Themes</name>
 
   <scm>
-    <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material.git</connection>
-    <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material.git</developerConnection>
-    <url>http://github.com/GwtMaterialDesign/gwt-material</url>
+    <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
+    <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
+    <url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
     <tag>HEAD</tag>
   </scm>
 
