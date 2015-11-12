@@ -1,4 +1,4 @@
-# GwtMaterial Themes
+# GwtMaterial Themes [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes)
 <img src="http://gwt-material-demo.herokuapp.com/bin/ic_gwt_logo.png" />
 <br/>
 Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material <br>
@@ -8,7 +8,7 @@ Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-themes</artifactId>
-    <version>1.3.4-SNAPSHOT</version>
+    <version>1.4</version>
 </dependency>
 ```
 
