@@ -8,6 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>gwt-material-themes</artifactId>
+  <version>1.5-SNAPSHOT</version>
 
   <name>Gwt Material Themes</name>
 
@@ -15,7 +16,7 @@
     <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
     <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
     <url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
-    <tag>gwt-material-themes-1.4</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <licenses>
