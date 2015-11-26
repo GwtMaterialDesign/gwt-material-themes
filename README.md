@@ -17,3 +17,5 @@ Import the theme in your GWT Module
 ```xml
 <inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/>
 ```
+##Follow Us
+<a href="https://plus.google.com/u/0/communities/108005250093449814286"> Google Plus</a>
