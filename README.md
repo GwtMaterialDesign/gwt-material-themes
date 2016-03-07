@@ -1,4 +1,4 @@
-<img src="http://gwt-material-demo.herokuapp.com/bin/ic_gwt_logo.png" />
+<img src="http://i.imgur.com/jxTSZ3K.png" />
 # gwt-material-themes [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes)
 
 <br/>
