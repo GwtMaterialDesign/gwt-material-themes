@@ -11,6 +11,9 @@ Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material
 </dependency>
 ```
 
+## Changelog
+You can view the changelog [here](https://github.com/GwtMaterialDesign/gwt-material-themes/wiki/Changelog)
+
 Import the theme in your GWT Module
 ```xml
 <inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/>
