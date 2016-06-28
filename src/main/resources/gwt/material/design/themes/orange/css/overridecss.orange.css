@@ -24,3 +24,48 @@ blockquote {
 .progress div {
     background-color: #fb8c00;
 }
+
+/**Time Picker**/
+.lolliclock-header {
+    background: #ff9800  !important;
+}
+
+.lolliclock-active-button-background {
+    background-color: #ff9800  !important;
+}
+
+.lolliclock-button {
+    color: #ff9800  !important;
+}
+
+.lolliclock-canvas-bg {
+    fill: rgba(255, 183, 77, 0.25) !important
+}
+
+.lolliclock-canvas-fg {
+    fill: #ff9800 !important;
+}
+
+.lolliclock-canvas line {
+    stroke: rgba(255, 183, 77, 0.5) !important;
+}
+
+.lolliclock-tick.active, .lolliclock-tick:hover {
+    background-color: #ffb74d !important;
+}
+
+/** File Uploader **/
+.fileuploader .upload-label {
+    background-color: #ff9800 !important;
+}
+
+.fileuploader .upload-label i {
+    color: #ff9800 !important;
+}
+
+.fileuploader.active{
+    background: #ff9800 !important;
+}
+.fileuploader.active .upload-label{
+    color: #ff9800 !important;
+}

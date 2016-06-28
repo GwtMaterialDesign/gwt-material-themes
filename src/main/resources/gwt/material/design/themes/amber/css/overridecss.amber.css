@@ -24,3 +24,32 @@ blockquote {
 .progress div {
 	background-color: #ffb300;
 }
+
+/**Time Picker**/
+.lolliclock-header {
+	background: #ffc107;
+}
+
+.lolliclock-active-button-background {
+	background-color: #ffc107;
+}
+
+.lolliclock-button {
+	color: #ffc107;
+}
+
+.lolliclock-canvas-bg {
+	fill: rgba(255, 193, 7, 0.25);
+}
+
+.lolliclock-canvas-fg {
+	fill: #ffc107;
+}
+
+.lolliclock-canvas line {
+	stroke: rgba(255, 193, 7, 0.5);
+}
+
+.lolliclock-tick.active, .lolliclock-tick:hover {
+	background-color: #ffd54f;
+}

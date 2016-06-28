@@ -1,57 +1,57 @@
 /** Blockquote **/
 blockquote {
-	border-left: 5px solid #8d6e63 !important;
+	border-left: 5px solid #ffca28 !important;
 }
 
 .multiValueSuggestBox-panel:focus {
-	border-bottom: 2px solid #8d6e63 !important;
+	border-bottom: 2px solid #ffca28 !important;
 }
 
 /** Image Slider **/
 .slider .indicators .indicator-item.active {
-	background-color: #795548;
+	background-color: #ffc107;
 }
 
 /**SCROLLSPY**/
 .table-of-contents a.active {
-	border-left: 2px solid #795548 !important;
+	border-left: 2px solid #ffc107 !important;
 }
 
 .table-of-contents a:hover {
-	border-left: 1px solid #795548 !important;
+	border-left: 1px solid #ffc107 !important;
 }
 
 .progress div {
-	background-color: #6d4c41;
+	background-color: #ffb300;
 }
 
 /**Time Picker**/
 .lolliclock-header {
-	background: #795548 !important;
+	background: #ffc107 !important;
 }
 
 .lolliclock-active-button-background {
-	background-color: #795548 !important;
+	background-color: #ffc107 !important;
 }
 
 .lolliclock-button {
-	color: #795548 !important;
+	color: #ffc107 !important;
 }
 
 .lolliclock-canvas-bg {
-	fill: rgba(121, 85, 72, 0.25) !important
+	fill: rgba(255, 193, 7, 0.25) !important;
 }
 
 .lolliclock-canvas-fg {
-	fill: #795548 !important;
+	fill: #ffc107 !important;
 }
 
 .lolliclock-canvas line {
-	stroke: rgba(121, 85, 72, 0.5) !important;
+	stroke: rgba(255, 193, 7, 0.5) !important;
 }
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
-	background-color: #a1887f !important;
+	background-color: #ffd54f !important;
 }
 
 /** File Uploader **/
