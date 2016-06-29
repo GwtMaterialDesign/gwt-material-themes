@@ -56,16 +56,58 @@ blockquote {
 
 /** File Uploader **/
 .fileuploader .upload-label {
-    background-color: #ffc107 !important;
+    background-color: #4caf50 !important;
 }
 
 .fileuploader .upload-label i {
-    color: #ffc107 !important;
+    background: #fff !important;
+    color: #4caf50 !important;
 }
 
-.fileuploader.active{
-    background: #ffc107 !important;
+.fileuploader.active {
+    background: #4caf50 !important;
 }
-.fileuploader.active .upload-label{
-    color: #ffc107 !important;
+
+.fileuploader.active .upload-label {
+    color: #fff !important;
+}
+
+.preview-container .previews .zdrop-info .preview-icon {
+    color: #4caf50 !important;
+}
+
+.preview-container .header {
+    background-color: #4caf50 !important;
+}
+
+/** Window **/
+.window-overlay .window .window-toolbar {
+    background-color: #4caf50 !important;
+}
+
+/** Tree Item **/
+.tree-item i {
+    color: #4caf50;
+}
+
+/** Stepper **/
+.stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
+    color: #4caf50 !important;
+}
+
+.stepper .step > div:first-child .circle {
+    background: #4caf50 !important;
+}
+
+/** Rich Editor **/
+.editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
+    background: #4caf50 !important;
+}
+
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
+    background: #4caf50 !important;
+}
+
+button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
+    background: #d8d8d7 !important;
 }
