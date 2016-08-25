@@ -3,12 +3,12 @@
   <parent>
     <artifactId>gwt-material-parent</artifactId>
     <groupId>com.github.gwtmaterialdesign</groupId>
-    <version>1.5.2</version>
+    <version>1.6.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>gwt-material-themes</artifactId>
-  <version>1.5.2</version>
+  <version>1.6.0</version>
 
   <name>Gwt Material Themes</name>
 
@@ -16,7 +16,7 @@
     <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
     <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
     <url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
-    <tag>v1.5.2</tag>
+    <tag>v1.6.0</tag>
   </scm>
 
   <licenses>
