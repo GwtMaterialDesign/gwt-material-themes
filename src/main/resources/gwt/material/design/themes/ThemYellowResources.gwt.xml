@@ -29,8 +29,5 @@
   <inherits name="com.google.gwt.resources.Resources"/>
 
   <!-- public resources -->
-  <public path="red"/>
-
-  <stylesheet src="css/materialize.red.css"/>
-  <stylesheet src="css/overridecss.red.css"/>
+  <public path="yellow"/>
 </module>

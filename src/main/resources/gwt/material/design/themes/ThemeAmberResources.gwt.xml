@@ -29,8 +29,5 @@
   <inherits name="com.google.gwt.resources.Resources"/>
 
   <!-- public resources -->
-  <public path="purple"/>
-
-  <stylesheet src="css/materialize.purple.css"/>
-  <stylesheet src="css/overridecss.purple.css"/>
+  <public path="amber"/>
 </module>
