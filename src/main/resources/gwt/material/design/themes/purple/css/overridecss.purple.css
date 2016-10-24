@@ -116,3 +116,13 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 .material-rating {
     color: #9c27b0;
 }
+
+/** Badge **/
+.badge {
+    background: #7b1fa2;
+}
+
+/** Tabs **/
+.tabs {
+    background: #9c27b0;
+}
