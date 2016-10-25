@@ -126,3 +126,8 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 .tabs {
     background: #ff9800;
 }
+
+/** Table **/
+.top-panel {
+    background: #ef6c00;
+}
