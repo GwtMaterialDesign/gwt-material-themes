@@ -26,11 +26,11 @@
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
     "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
 <module>
-  <inherits name="com.google.gwt.resources.Resources"/>
+  <inherits name="gwt.material.design.themes.ThemeBase"/>
 
   <!-- public resources -->
-  <public path="brown"/>
+  <public path="red"/>
 
-  <stylesheet src="css/materialize.brown.css"/>
-  <stylesheet src="css/overridecss.brown.css"/>
+  <!-- client path -->
+  <source path="red"/>
 </module>
