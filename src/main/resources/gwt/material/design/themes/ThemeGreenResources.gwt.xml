@@ -29,7 +29,7 @@
   <inherits name="gwt.material.design.themes.ThemeBase"/>
 
   <!-- public resources -->
-  <public path="green"/>
+  <public path="green" excludes="**/*.java,**/*.class"/>
 
   <!-- client path -->
   <source path="green"/>
