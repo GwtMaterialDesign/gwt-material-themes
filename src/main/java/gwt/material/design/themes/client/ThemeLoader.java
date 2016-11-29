@@ -21,7 +21,7 @@ package gwt.material.design.themes.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.RunAsyncCallback;
-import com.google.gwt.dom.client.StyleElement;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.StyleInjector;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.TextResource;
@@ -54,7 +54,7 @@ public class ThemeLoader {
         TextResource overrides();
     }
 
-    private static List<StyleElement> styleElements;
+    private static List<Element> elements;
 
     /**
      * Load a provided {@link ThemeBundle} asynchronously.
@@ -67,19 +67,19 @@ public class ThemeLoader {
             @Override
             public void onSuccess() {
                 if(bundle != null) {
-                    if(styleElements == null) {
-                        styleElements = new ArrayList<>();
+                    if(elements == null) {
+                        elements = new ArrayList<>();
                     } else {
                         unload();
                     }
 
                     // More resources might be loaded in the future.
-                    styleElements.add(StyleInjector.injectStylesheet(bundle.style().getText()));
-                    styleElements.add(StyleInjector.injectStylesheet(bundle.overrides().getText()));
+                    elements.add(StyleInjector.injectStylesheet(bundle.style().getText()));
+                    elements.add(StyleInjector.injectStylesheet(bundle.overrides().getText()));
                 }
 
                 if(callback != null) {
-                    callback.onSuccess(styleElements.size());
+                    callback.onSuccess(elements.size());
                 }
             }
             @Override
@@ -95,11 +95,11 @@ public class ThemeLoader {
      * Unload the current loaded theme.
      */
     public static void unload() {
-        if(styleElements != null) {
-            for (StyleElement style : styleElements) {
+        if(elements != null) {
+            for (Element style : elements) {
                 style.removeFromParent();
             }
-            styleElements.clear();
+            elements.clear();
         }
     }
 }
