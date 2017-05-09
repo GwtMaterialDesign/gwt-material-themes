@@ -1,5 +1,8 @@
 <img src="http://i.imgur.com/jxTSZ3K.png" />
-# gwt-material-themes [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes)
+
+# gwt-material-themes 
+
+[![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes)
 Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material <br>
 
 ## Usage
@@ -7,7 +10,7 @@ Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-themes</artifactId>
-    <version>2.0-rc4</version>
+    <version>2.0-rc5</version>
 </dependency>
 ```
 
