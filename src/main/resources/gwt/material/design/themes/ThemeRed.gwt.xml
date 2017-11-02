@@ -26,8 +26,14 @@
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
     "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
 <module>
-  <inherits name="gwt.material.design.themes.ThemeRedResources"/>
+  <inherits name="gwt.material.design.themes.ThemeBase"/>
 
-  <stylesheet src="css/materialize.red.css"/>
-  <stylesheet src="css/overridecss.red.css"/>
+  <!-- public resources -->
+  <public path="red" excludes="**/*.java,**/*.class"/>
+
+  <!-- client path -->
+  <source path="red"/>
+
+  <stylesheet src="css/materialize.red.min.css"/>
+  <stylesheet src="css/overridecss.red.min.css"/>
 </module>

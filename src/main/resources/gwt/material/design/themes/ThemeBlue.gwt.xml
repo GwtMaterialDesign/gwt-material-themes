@@ -26,8 +26,14 @@
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
     "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
 <module>
-  <inherits name="gwt.material.design.themes.ThemeBlueResources"/>
+  <inherits name="gwt.material.design.themes.ThemeBase"/>
 
-  <stylesheet src="css/materialize.blue.css"/>
-  <stylesheet src="css/overridecss.blue.css"/>
+  <!-- public resources -->
+  <public path="blue" excludes="**/*.java,**/*.class"/>
+
+  <!-- client path -->
+  <source path="blue"/>
+
+  <stylesheet src="css/materialize.blue.min.css"/>
+  <stylesheet src="css/overridecss.blue.min.css"/>
 </module>
