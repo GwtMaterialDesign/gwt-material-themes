@@ -12,7 +12,7 @@ Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-themes</artifactId>
-    <version>2.0-rc6</version>
+    <version>2.0</version>
 </dependency>
 ```
 
@@ -47,5 +47,5 @@ A Custom theme manager to store selected theme to browser’s cache.
 [Theme Manager](https://github.com/GwtMaterialDesign/gwt-material-demo/blob/release_2.0/src/main/java/gwt/material/design/demo/client/ThemeManager.java)
 
 
-##Follow Us
+## Follow Us
 <a href="https://plus.google.com/u/0/communities/108005250093449814286"> Google Plus</a>
