@@ -8,6 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>gwt-material-themes</artifactId>
+  <packaging>gwt-lib</packaging>
   <version>2.1-SNAPSHOT</version>
 
   <name>Gwt Material Themes</name>
@@ -78,7 +79,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.6</version>
+        <version>${surefire.version}</version>
         <configuration>
           <excludes>
             <exclude>**/*Test.java</exclude>
@@ -92,16 +93,13 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
+        <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
-        <version>${gwt.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>test</goal>
-            </goals>
-          </execution>
-        </executions>
+        <version>${tbroyer.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <moduleName>gwt.material.design.themes.ThemeBase</moduleName>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
