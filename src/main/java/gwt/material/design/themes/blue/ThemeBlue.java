@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeBlue extends ThemeLoader.ThemeBundle {
     ThemeBlue INSTANCE = GWT.create(ThemeBlue.class);
 
-    @Source("gwt/material/design/themes/blue/css/materialize.blue.css")
+    @Source("gwt/material/design/themes/blue/css/materialize.blue.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/blue/css/overridecss.blue.css")
+    @Source("gwt/material/design/themes/blue/css/overridecss.blue.min.css")
     TextResource overrides();
 }

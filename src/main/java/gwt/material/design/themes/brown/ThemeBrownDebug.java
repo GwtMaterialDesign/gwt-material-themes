@@ -17,18 +17,18 @@
  * limitations under the License.
  * #L%
  */
-package gwt.material.design.themes.red;
+package gwt.material.design.themes.brown;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.TextResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
-public interface ThemeRed extends ThemeLoader.ThemeBundle {
-    ThemeRed INSTANCE = GWT.create(ThemeRed.class);
+public interface ThemeBrownDebug extends ThemeLoader.ThemeBundle {
+    ThemeBrownDebug INSTANCE = GWT.create(ThemeBrownDebug.class);
 
-    @Source("gwt/material/design/themes/red/css/materialize.red.min.css")
+    @Source("gwt/material/design/themes/brown/css/materialize.brown.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/red/css/overridecss.red.min.css")
+    @Source("gwt/material/design/themes/brown/css/overridecss.brown.css")
     TextResource overrides();
 }

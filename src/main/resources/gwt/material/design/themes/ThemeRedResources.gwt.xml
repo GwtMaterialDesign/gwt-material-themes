@@ -29,11 +29,8 @@
   <inherits name="gwt.material.design.themes.ThemeBase"/>
 
   <!-- public resources -->
-  <public path="amber" excludes="**/*.java,**/*.class"/>
+  <public path="red" excludes="**/*.java,**/*.class"/>
 
   <!-- client path -->
-  <source path="amber"/>
-
-  <stylesheet src="css/materialize.amber.css"/>
-  <stylesheet src="css/overridecss.amber.css"/>
+  <source path="red"/>
 </module>

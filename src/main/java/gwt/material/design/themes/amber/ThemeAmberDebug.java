@@ -17,18 +17,18 @@
  * limitations under the License.
  * #L%
  */
-package gwt.material.design.themes.red;
+package gwt.material.design.themes.amber;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.TextResource;
 import gwt.material.design.themes.client.ThemeLoader;
 
-public interface ThemeRed extends ThemeLoader.ThemeBundle {
-    ThemeRed INSTANCE = GWT.create(ThemeRed.class);
+public interface ThemeAmberDebug extends ThemeLoader.ThemeBundle {
+    ThemeAmberDebug INSTANCE = GWT.create(ThemeAmberDebug.class);
 
-    @Source("gwt/material/design/themes/red/css/materialize.red.min.css")
+    @Source("gwt/material/design/themes/amber/css/materialize.amber.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/red/css/overridecss.red.min.css")
+    @Source("gwt/material/design/themes/amber/css/overridecss.amber.css")
     TextResource overrides();
 }

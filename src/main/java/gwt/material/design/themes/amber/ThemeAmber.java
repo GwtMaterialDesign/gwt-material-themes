@@ -27,9 +27,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeAmber extends ThemeLoader.ThemeBundle {
     ThemeAmber INSTANCE = GWT.create(ThemeAmber.class);
 
-    @ClientBundle.Source("gwt/material/design/themes/amber/css/materialize.amber.css")
+    @ClientBundle.Source("gwt/material/design/themes/amber/css/materialize.amber.min.css")
     TextResource style();
 
-    @ClientBundle.Source("gwt/material/design/themes/amber/css/overridecss.amber.css")
+    @ClientBundle.Source("gwt/material/design/themes/amber/css/overridecss.amber.min.css")
     TextResource overrides();
 }

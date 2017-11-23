@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemePink extends ThemeLoader.ThemeBundle {
     ThemePink INSTANCE = GWT.create(ThemePink.class);
 
-    @Source("gwt/material/design/themes/pink/css/materialize.pink.css")
+    @Source("gwt/material/design/themes/pink/css/materialize.pink.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/pink/css/overridecss.pink.css")
+    @Source("gwt/material/design/themes/pink/css/overridecss.pink.min.css")
     TextResource overrides();
 }

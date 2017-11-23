@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeBrown extends ThemeLoader.ThemeBundle {
     ThemeBrown INSTANCE = GWT.create(ThemeBrown.class);
 
-    @Source("gwt/material/design/themes/brown/css/materialize.brown.css")
+    @Source("gwt/material/design/themes/brown/css/materialize.brown.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/brown/css/overridecss.brown.css")
+    @Source("gwt/material/design/themes/brown/css/overridecss.brown.min.css")
     TextResource overrides();
 }

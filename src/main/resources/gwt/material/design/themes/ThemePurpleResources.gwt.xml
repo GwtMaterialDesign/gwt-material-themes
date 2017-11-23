@@ -33,7 +33,4 @@
 
   <!-- client path -->
   <source path="purple"/>
-
-  <stylesheet src="css/materialize.purple.css"/>
-  <stylesheet src="css/overridecss.purple.css"/>
 </module>
