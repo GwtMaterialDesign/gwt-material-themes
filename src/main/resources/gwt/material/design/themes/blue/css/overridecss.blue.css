@@ -167,3 +167,13 @@ ul.select2-results__options[aria-multiselectable="true"] li.select2-results__opt
     border: 2px solid #42A5F5;
     box-shadow: none;
 }
+
+/** Progress Line Bar **/
+.progress-line-bar .progress-item.active {
+    background: #2196f3;
+}
+
+/** Group Toggle Button **/
+.group-toggle-button button.active {
+    background: #2196f3;
+}
