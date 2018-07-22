@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemePinkResources"/>
 
-  <stylesheet src="css/materialize.pink.css"/>
-  <stylesheet src="css/overridecss.pink.css"/>
+  <stylesheet src="css/materialize.pink.min.css"/>
+  <stylesheet src="css/overridecss.pink.min.css"/>
 </module>

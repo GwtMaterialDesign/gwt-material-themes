@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemeGreenResources"/>
 
-  <stylesheet src="css/materialize.green.css"/>
-  <stylesheet src="css/overridecss.green.css"/>
+  <stylesheet src="css/materialize.green.min.css"/>
+  <stylesheet src="css/overridecss.green.min.css"/>
 </module>

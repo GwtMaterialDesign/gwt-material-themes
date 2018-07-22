@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeRed extends ThemeLoader.ThemeBundle {
     ThemeRed INSTANCE = GWT.create(ThemeRed.class);
 
-    @Source("gwt/material/design/themes/red/css/materialize.red.css")
+    @Source("gwt/material/design/themes/red/css/materialize.red.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/red/css/overridecss.red.css")
+    @Source("gwt/material/design/themes/red/css/overridecss.red.min.css")
     TextResource overrides();
 }

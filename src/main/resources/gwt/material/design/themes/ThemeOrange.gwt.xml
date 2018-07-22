@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemeOrangeResources"/>
 
-  <stylesheet src="css/materialize.orange.css"/>
-  <stylesheet src="css/overridecss.orange.css"/>
+  <stylesheet src="css/materialize.orange.min.css"/>
+  <stylesheet src="css/overridecss.orange.min.css"/>
 </module>

@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemePurple extends ThemeLoader.ThemeBundle {
     ThemePurple INSTANCE = GWT.create(ThemePurple.class);
 
-    @Source("gwt/material/design/themes/purple/css/materialize.purple.css")
+    @Source("gwt/material/design/themes/purple/css/materialize.purple.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/purple/css/overridecss.purple.css")
+    @Source("gwt/material/design/themes/purple/css/overridecss.purple.min.css")
     TextResource overrides();
 }

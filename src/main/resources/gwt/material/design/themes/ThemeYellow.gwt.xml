@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemeYellowResources"/>
 
-  <stylesheet src="css/materialize.yellow.css"/>
-  <stylesheet src="css/overridecss.yellow.css"/>
+  <stylesheet src="css/materialize.yellow.min.css"/>
+  <stylesheet src="css/overridecss.yellow.min.css"/>
 </module>

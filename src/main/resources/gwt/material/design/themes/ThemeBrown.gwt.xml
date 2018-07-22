@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemeBrownResources"/>
 
-  <stylesheet src="css/materialize.brown.css"/>
-  <stylesheet src="css/overridecss.brown.css"/>
+  <stylesheet src="css/materialize.brown.min.css"/>
+  <stylesheet src="css/overridecss.brown.min.css"/>
 </module>

@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeGrey extends ThemeLoader.ThemeBundle {
     ThemeGrey INSTANCE = GWT.create(ThemeGrey.class);
 
-    @Source("gwt/material/design/themes/grey/css/materialize.grey.css")
+    @Source("gwt/material/design/themes/grey/css/materialize.grey.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/grey/css/overridecss.grey.css")
+    @Source("gwt/material/design/themes/grey/css/overridecss.grey.min.css")
     TextResource overrides();
 }

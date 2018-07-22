@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeOrange extends ThemeLoader.ThemeBundle {
     ThemeOrange INSTANCE = GWT.create(ThemeOrange.class);
 
-    @Source("gwt/material/design/themes/orange/css/materialize.orange.css")
+    @Source("gwt/material/design/themes/orange/css/materialize.orange.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/orange/css/overridecss.orange.css")
+    @Source("gwt/material/design/themes/orange/css/overridecss.orange.min.css")
     TextResource overrides();
 }

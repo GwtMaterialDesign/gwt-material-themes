@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeYellow extends ThemeLoader.ThemeBundle {
     ThemeYellow INSTANCE = GWT.create(ThemeYellow.class);
 
-    @Source("gwt/material/design/themes/yellow/css/materialize.yellow.css")
+    @Source("gwt/material/design/themes/yellow/css/materialize.yellow.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/yellow/css/overridecss.yellow.css")
+    @Source("gwt/material/design/themes/yellow/css/overridecss.yellow.min.css")
     TextResource overrides();
 }

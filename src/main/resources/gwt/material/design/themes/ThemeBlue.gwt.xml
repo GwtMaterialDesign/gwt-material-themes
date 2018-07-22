@@ -28,6 +28,6 @@
 <module>
   <inherits name="gwt.material.design.themes.ThemeBlueResources"/>
 
-  <stylesheet src="css/materialize.blue.css"/>
-  <stylesheet src="css/overridecss.blue.css"/>
+  <stylesheet src="css/materialize.blue.min.css"/>
+  <stylesheet src="css/overridecss.blue.min.css"/>
 </module>

@@ -26,9 +26,9 @@ import gwt.material.design.themes.client.ThemeLoader;
 public interface ThemeGreen extends ThemeLoader.ThemeBundle {
     ThemeGreen INSTANCE = GWT.create(ThemeGreen.class);
 
-    @Source("gwt/material/design/themes/green/css/materialize.green.css")
+    @Source("gwt/material/design/themes/green/css/materialize.green.min.css")
     TextResource style();
 
-    @Source("gwt/material/design/themes/green/css/overridecss.green.css")
+    @Source("gwt/material/design/themes/green/css/overridecss.green.min.css")
     TextResource overrides();
 }
