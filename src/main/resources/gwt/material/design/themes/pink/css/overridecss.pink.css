@@ -451,6 +451,70 @@ ul.dropdown-content {
     box-shadow: 0 1px 0 0 #4CAF50 !important;
 }
 
+/** Errors - Hoverable **/
+.input-field.hoverable-status .field-error-label,
+.input-field.hoverable-status .field-success-label {
+    position: absolute;
+    background: #D32F2F;
+    color: white !important;
+    min-height: 40px;
+    border-radius: 4px;
+    padding: 12px;
+    margin-right: 12px;
+    visibility: hidden;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 999;
+    max-width: 400px;
+    display: inline;
+    min-width: 120px;
+    right: 0px;
+    top: 54px;
+}
+
+.input-field.hoverable-status .field-success-label {
+    background: #4caf50;
+}
+
+.input-field.hoverable-status .field-error-label::before,
+.input-field.hoverable-status .field-success-label::before {
+    content: "";
+    width: 10px;
+    height: 12px;
+    border-bottom: solid 12px #D32F2F;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    top: -12px;
+    position: absolute;
+    right: 12px;
+}
+
+.input-field.hoverable-status .field-success-label::before {
+    border-bottom: solid 12px #4caf50;
+}
+
+.input-field.hoverable-status i.status-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #d32f2f;
+    z-index: 1;
+}
+
+.input-field.hoverable-status.disabled .status-icon {
+    display: none;
+}
+
+.input-field.hoverable-status input {
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/** Hoverable - ListBox **/
+.input-field.hoverable-status.listbox-wrapper .caret {
+    display: none;
+}
+
 /** Outlined Button (MD2) **/
 button.btn-outlined,
 button.btn-outlined:hover,
@@ -464,6 +528,34 @@ button.btn-outlined:active {
 
 button.btn-outlined.disabled {
     background-color: transparent !important;
+}
+
+/** Ghost Button **/
+button.btn-ghost, button.btn-ghost:focus {
+    padding: 0px 20px;
+    border-radius: 4px;
+    color: #009fee;
+    font-size: 1em;
+    font-weight: 400;
+    background: 0;
+    height: 36px;
+    text-transform: uppercase;
+    border: 1.6px solid #009fee;
+    outline: 0;
+    -webkit-transition: all .16s linear;
+    -moz-transition: all .16s linear;
+    -o-transition: all .16s linear;
+    transition: all .16s linear;
+}
+
+button.btn-ghost.disabled {
+    border: none;
+}
+
+button.btn-ghost:hover, button.btn-ghost:active {
+    background: #009fee;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /** Floating Action Button **/
@@ -647,6 +739,23 @@ input:-webkit-autofill {
 .input-field.filled label:active,
 .input-field.outlined label:active {
     margin-left: 8px;
+}
+
+/** With Icons **/
+.input-field.filled .prefix ~ input,
+.input-field.filled .prefix ~ textarea,
+.input-field.outlined .prefix ~ input,
+.input-field.outlined .prefix ~ textarea {
+    margin-left: 0px;
+    padding-left: 56px !important;
+    width: 100%;
+}
+
+.input-field.filled .prefix,
+.input-field.outlined .prefix {
+    padding-top: 6px;
+    padding-left: 8px;
+    color: #757575;
 }
 
 /** Filled Type **/
@@ -868,13 +977,27 @@ input.select-dropdown {
     width: 100%;
 }
 
-/** Modals **/
+.loader-wrapper span.material-label {
+    display: inline;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 60px;
+}
+
+/** Dialogs **/
 .modal.fullscreen,
 .modal.modal-fixed-footer.fullscreen {
     width: 100%;
     max-height: 100%;
     height: 100%;
     top: 0 !important;
+}
+
+div.lean-overlay,
+div#sidenav-overlay {
+    background: transparent;
+    transition: 400ms all;
 }
 
 /** NavBar **/
@@ -1713,4 +1836,27 @@ ul.select2-results__options[aria-multiselectable="true"] li.select2-results__opt
 /** Group Toggle Button **/
 .group-toggle-button button.active {
     background: #e91e63;
+}
+
+/** DatePicker Focus **/
+.picker__input.picker__input--active {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63;
+}
+
+/** ComboBox Focus **/
+.input-field.combobox .select2-container--focus .select2-selection {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63;
+}
+
+.input-field.outlined.combobox .select2-container--focus .select2-selection {
+    border: 2px solid #e91e63;
+    box-shadow: none;
+}
+
+/** Time Picker Focus **/
+.input-field.timepicker input.valid {
+    border-bottom: 1px solid #e91e63;
+    box-shadow: 0 1px 0 0 #e91e63;
 }
