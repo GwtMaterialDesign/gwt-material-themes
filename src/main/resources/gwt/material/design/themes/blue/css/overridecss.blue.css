@@ -511,7 +511,7 @@ ul.dropdown-content {
 }
 
 /** Hoverable - ListBox **/
-.input-field.hoverable-status.listbox-wrapper .caret {
+.input-field.hoverable-status.listbox-wrapper.field-error .caret {
     display: none;
 }
 
@@ -624,6 +624,15 @@ footer.fixed {
 /** Input Field **/
 .input-field label {
     left: 0 !important;
+}
+
+.input-field label.required:before,
+.input-field label span.required:before {
+    content: "*";
+    float: right;
+    margin-left: 8px;
+    font-size: 1.2em;
+    color: #f44336;
 }
 
 .col .input-field label {
@@ -1725,7 +1734,7 @@ blockquote {
 
 /** TimePicker - Outlined **/
 .input-field.outlined.timepicker input:focus,
-.input-field.outlined.timepicker input.valid{
+.input-field.outlined.timepicker input.valid {
     border: 2px solid #42a5f5;
     box-shadow: none;
 }
@@ -1810,7 +1819,7 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 
 /** Carousel **/
 .slick-dots li {
-    background: rgba(33,150,243,0.23);
+    background: rgba(33, 150, 243, 0.23);
 }
 
 .slick-dots li.slick-active {

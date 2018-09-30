@@ -511,7 +511,7 @@ ul.dropdown-content {
 }
 
 /** Hoverable - ListBox **/
-.input-field.hoverable-status.listbox-wrapper .caret {
+.input-field.hoverable-status.listbox-wrapper.field-error .caret {
     display: none;
 }
 
@@ -624,6 +624,15 @@ footer.fixed {
 /** Input Field **/
 .input-field label {
     left: 0 !important;
+}
+
+.input-field label.required:before,
+.input-field label span.required:before {
+    content: "*";
+    float: right;
+    margin-left: 8px;
+    font-size: 1.2em;
+    color: #f44336;
 }
 
 .col .input-field label {
