@@ -2,11 +2,11 @@
 * Table
 **/
 .striped table tbody tr:nth-child(odd) {
-  background-color: #f2f2f2 !important;
+  background-color: $table-striped-bg-color !important;
 }
 
 .bordered table tr {
-  border-bottom: 1px solid #d0d0d0 !important;
+  border-bottom: 1px solid $table-border-bg-color !important;
 }
 
 table .gwt-CheckBox label {
@@ -14,7 +14,7 @@ table .gwt-CheckBox label {
 }
 
 .hoverable table > tbody > tr:hover {
-  background: #f2f2f2 !important;
+  background: $table-hoverable-bg-color !important;
   transition: 1s all;
   -webkit-transition: 1s all;
   -moz-transition: 1s all;

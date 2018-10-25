@@ -13,7 +13,7 @@ ul.side-nav li > div {
 
 ul.side-nav .brand-logo {
   font-size: 2.1rem;
-  border-bottom: 1px solid #e9e9e9;
+  border-bottom: $sidenav-brand-logo-border-bottom;
 }
 
 ul.side-nav.fixed a,
@@ -35,7 +35,7 @@ ul.side-nav i {
 }
 
 ul.side-nav .sidenav-content i {
-  font-size: 1.6em;
+  font-size: $sidenav-content-font-size;
 }
 
 ul.side-nav .collapsible-header,
@@ -49,7 +49,7 @@ ul.side-nav .collapsible-body li {
 }
 
 ul.side-nav .collapsible-body li.active {
-  background-color: #eeeeee !important;
+  background-color: $sidenav-collapsible-item-active-color !important;
 }
 
 ul.side-nav.right-aligned {
@@ -74,17 +74,17 @@ ul.side-nav.card,
 ul.side-nav.card {
   margin: 20px;
   height: auto;
-  width: 232px;
+  width: $sidenav-card-width;
   padding-bottom: 0;
-  top: 64px;
+  top: $sidenav-card-top;
 }
 
 /**
 * SideNav Drawer
 **/
 ul.side-nav.drawer-with-header {
-  top: 64px;
-  height: calc(100vh - 64px);
+  top: $sidenav-drawer-with-header-top;
+  height: $sidenav-drawer-with-header-height;
 }
 
 ul.side-nav.push-with-header {
@@ -92,8 +92,8 @@ ul.side-nav.push-with-header {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  top: 64px;
-  height: calc(100vh - 64px);
+  top: $sidenav-push-with-header-top;
+  height: $sidenav-push-with-header-height;
 }
 
 /**
@@ -101,10 +101,10 @@ ul.side-nav.push-with-header {
 **/
 ul.side-nav.mini,
 ul.side-nav.mini-with-expand {
-  top: 65px;
+  top: $sidenav-mini-top;
   text-align: center;
   overflow-x: hidden;
-  height: calc(100vh - 64px);
+  height: $sidenav-mini-top;
 }
 
 ul.side-nav.mini li div {
@@ -149,5 +149,5 @@ ul.side-nav.mini-with-expand li a span {
 * SideNav - Overlay
 **/
 #sidenav-overlay {
-  visibility: hidden;
+  visibility: $sidenav-overlay-visibility;
 }
