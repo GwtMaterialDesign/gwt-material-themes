@@ -139,7 +139,7 @@
           </execution>
         </executions>
         <configuration>
-          <inputPath>${basedir}/src/main/sass/</inputPath>
+          <inputPath>${basedir}/src/main/sass</inputPath>
           <outputPath>${basedir}/target/</outputPath>
           <includePath>${basedir}/src/main/sass/plugins/</includePath>
           <generateSourceMap>false</generateSourceMap>

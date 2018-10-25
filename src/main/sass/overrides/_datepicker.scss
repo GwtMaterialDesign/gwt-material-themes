@@ -1,0 +1,85 @@
+/**
+* Date Picker - Landscape
+**/
+.picker__close,
+.picker__today,
+.picker__clear {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.landscape .picker__frame {
+  margin: 0 auto;
+  max-width: 585px;
+  width: 585px;
+  max-height: 350px !important;
+}
+
+.landscape .picker__wrap {
+  height: 0 !important;
+}
+
+.landscape .picker__date-display {
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 300;
+  float: left;
+  width: 40%;
+  height: 342px;
+  clear: both;
+}
+
+.landscape .picker__calendar-container {
+  padding: 0 1rem;
+  float: left;
+  width: 60%;
+}
+
+.landscape .picker__footer {
+  text-align: right;
+  padding: 5px 10px;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 300px;
+  height: 40px;
+}
+
+.landscape .picker__box {
+  height: 342px;
+}
+
+.landscape .picker__month-display {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 78px;
+}
+
+.landscape .picker__day--infocus {
+  padding: 8px !important;
+  width: 36px !important;
+  margin: auto !important;
+}
+
+.picker__table .picker__day--outfocus {
+  display: block;
+  color: #dddddd;
+}
+
+.picker__table td {
+  padding: 0 !important;
+}
+
+.picker .picker__select--year.browser-default {
+  width: 26%;
+}
+
+/**
+* DatePicker Focus
+**/
+.picker__input.picker__input--active {
+  border-bottom: 1px solid $datepicker-border-color;
+  box-shadow: 0 1px 0 0 $datepicker-border-color;
+}

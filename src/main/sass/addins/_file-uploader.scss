@@ -1,0 +1,27 @@
+/**
+* File Uploader
+**/
+.fileuploader .upload-label {
+  background-color: #ff9800 !important;
+}
+
+.fileuploader .upload-label i {
+  background: #fff !important;
+  color: #ff9800 !important;
+}
+
+.fileuploader.active {
+  background: #ff9800 !important;
+}
+
+.fileuploader.active .upload-label {
+  color: #fff !important;
+}
+
+.preview-container .previews .zdrop-info .preview-icon {
+  color: #ff9800 !important;
+}
+
+.preview-container .header {
+  background-color: #ff9800 !important;
+}

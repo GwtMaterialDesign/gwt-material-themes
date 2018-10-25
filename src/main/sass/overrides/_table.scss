@@ -1,0 +1,25 @@
+/**
+* Table
+**/
+.striped table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2 !important;
+}
+
+.bordered table tr {
+  border-bottom: 1px solid #d0d0d0 !important;
+}
+
+table .gwt-CheckBox label {
+  margin-bottom: -10px;
+}
+
+.hoverable table > tbody > tr:hover {
+  background: #f2f2f2 !important;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+}
+
+.table-container .top-panel {
+  background: $table-top-panel-bg-color;
+}

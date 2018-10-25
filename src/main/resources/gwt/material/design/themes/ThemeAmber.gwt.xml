@@ -29,5 +29,4 @@
   <inherits name="gwt.material.design.themes.ThemeAmberResources"/>
 
   <stylesheet src="css/materialize.amber.min.css"/>
-  <stylesheet src="css/overridecss.amber.min.css"/>
 </module>

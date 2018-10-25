@@ -1,0 +1,11 @@
+/**
+* Autocomplete
+*/
+$autocomplete-focus-border: 2px solid $secondary-color !important;
+
+/**
+* Carousel
+*/
+// TODO: Test lighten
+$carousel-dots-color-active: $secondary-color !default;
+$carousel-dots-color: lighten($carousel-dots-color-active, 23%);

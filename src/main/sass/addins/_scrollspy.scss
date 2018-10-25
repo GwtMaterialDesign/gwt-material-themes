@@ -1,0 +1,10 @@
+/**
+* Scrollspy
+**/
+.table-of-contents a.active {
+  border-left: 2px solid #ff9800 !important;
+}
+
+.table-of-contents a:hover {
+  border-left: 1px solid #ff9800 !important;
+}

@@ -1,0 +1,216 @@
+/**
+* Media Queries
+**/
+@media screen and (max-width: 992px) {
+  /** Global **/
+  header,
+  footer,
+  main {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  main {
+    padding-bottom: 70px !important;
+  }
+
+  /** NavBar **/
+  .navmenu-permanent,
+  .drag-target,
+  #sidenav-overlay {
+    visibility: visible !important;
+  }
+
+  nav .nav-wrapper {
+    padding: 0;
+  }
+
+  nav.pinned {
+    width: 100% !important;
+  }
+
+  nav.navbar-shrink .brand-logo img {
+    width: auto;
+  }
+
+  nav.navbar-shrink .brand-logo {
+    left: 60px;
+    transform: translateX(0);
+  }
+
+  /** Search Bar **/
+  .input-field input[type=search] {
+    width: calc(100% - 10rem) !important;
+    margin-bottom: 0 !important;
+    padding-left: 0px !important;
+  }
+
+  .input-field input[type=search] + label {
+    z-index: 998 !important;
+  }
+
+  .search-result {
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  /** SideNav **/
+  ul.side-nav.fixed,
+  ul.side-nav.card,
+  ul.side-nav.drawer-with-header,
+  ul.side-nav.push-with-header,
+  ul.side-nav.mini {
+    margin: 0;
+    top: 0 !important;
+    left: 0;
+    height: 100%;
+    background: #fff;
+  }
+
+  ul.side-nav.mini-with-expand {
+    top: 56px;
+    height: calc(100vh - 56px);
+  }
+
+  ul.side-nav.mini {
+    top: 55px;
+  }
+
+  ul.side-nav.drawer-with-header {
+    margin-top: 0px;
+    background: white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  ul.side-nav.card {
+    margin: initial;
+    position: fixed;
+  }
+
+  /** Badge **/
+  nav ul a span.badge {
+    margin-top: 18px;
+  }
+
+  /** Tabs **/
+  .tabs.tab-icon a span {
+    display: none !important;
+  }
+
+  .tabs .tab a i {
+    margin: auto;
+    margin-top: 12px;
+  }
+
+  /** Images **/
+  .card .card-image img {
+    height: auto !important;
+  }
+
+  /** Table **/
+  .responsive-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+  }
+
+  .responsive-table table th {
+    display: block;
+  }
+
+  .responsive-table table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .responsive-table table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .responsive-table table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .responsive-table table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+
+  .responsive-table > div:nth-child(1) {
+    width: 20% !important;
+  }
+
+  .responsive-table > div:nth-child(3) {
+    top: 0 !important;
+    left: 20% !important;
+    width: 80% !important;
+    height: 100% !important;
+  }
+
+  .responsive-table table thead {
+    border: 0;
+    border-right: 1px solid #d0d0d0;
+  }
+
+  .responsive-table table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+
+  .responsive-table table thead {
+    display: block;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  /** SideNav **/
+  ul.side-nav.fixed.right-aligned {
+    right: 0 !important;
+    left: initial !important;
+  }
+
+  ul.side-nav.right-aligned:not(.drawer) {
+    position: fixed;
+    z-index: 997;
+  }
+
+  ul.side-nav.fixed {
+    left: 0 !important;
+  }
+}
+
+/**
+* Fix IOS Issue - Auto zooms when focusing on input element. And also the excess box-shadow
+* Causing a border on the left part of input-fields on mobile devices.
+* Read more - https://github.com/Dogfalo/materialize/issues/5008
+**/
+@media screen and (max-width: 768px) {
+  .input-field input:not([type]),
+  .input-field input[type=text],
+  .input-field input[type=password],
+  .input-field input[type=email],
+  .input-field input[type=url],
+  .input-field input[type=time],
+  .input-field input[type=date],
+  .input-field input[type=datetime-local],
+  .input-field input[type=tel],
+  .input-field input[type=number],
+  .input-field input[type=search],
+  .input-field textarea.materialize-textarea {
+    font-size: 16px;
+  }
+}

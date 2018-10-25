@@ -1,0 +1,30 @@
+/**
+* Loader
+*/
+.loader-wrapper {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.701961);
+  text-align: center;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.progress-wrapper {
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.loader-wrapper span.material-label {
+  display: inline;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  margin-top: 60px;
+}

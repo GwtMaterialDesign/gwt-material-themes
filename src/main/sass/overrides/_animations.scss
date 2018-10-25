@@ -1,0 +1,32 @@
+/**
+* Animations
+**/
+.materialScaleInitial,
+.pullInitial {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+}
+
+.materialScaleInitial {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform-origin: 50% 10%;
+  -webkit-transform-origin: 50% 10%;
+  -moz-transform-origin: 50% 10%;
+}
+
+.materialScale {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+.pullInitial {
+  margin-top: 500px !important;
+}
+
+.pull {
+  margin-top: -150px !important;
+}

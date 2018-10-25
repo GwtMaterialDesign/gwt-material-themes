@@ -1,0 +1,52 @@
+/**
+* Badge
+*/
+$badge-bg-color: $secondary-color;
+
+/**
+* Button
+*/
+$button-ghost-text-color: $secondary-color;
+$button-ghost-bg-color: 0;
+$button-ghost-border: 1.6px solid $secondary-color;
+$button-ghost-active-bg-color: $secondary-color;
+$button-outlined-border: 1px solid #00001e;
+$button-outlined-bg-color: #ffffff;
+$button-outlined-text-color: #000000;
+
+/**
+* Chips
+*/
+$chip-bg-color: #E4E4E4;
+$chip-outlined-border: 1px solid #00001e;
+$chip-outlined-bg-color: transparent;
+$chip-outlined-letter-width: 30px;
+$chip-outlined-letter-height: 30px;
+$chip-letter-width: 32px;
+$chip-letter-height: 32px;
+$chip-letter-font-size: 1.2em;
+
+/**
+* Date Picker
+*/
+$datepicker-border-color: $secondary-color;
+
+/**
+* Input Fields
+*/
+$input-outlined-border-color: $secondary-color;
+
+/**
+* Blockquote
+*/
+$blockquote-border-left: 5px solid $secondary-color !important;
+
+/**
+* Table
+*/
+$table-top-panel-bg-color: $secondary-color;
+
+/**
+* Tabs
+*/
+$tabs-wrapper-bg-color: $secondary-color;

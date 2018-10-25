@@ -1,0 +1,19 @@
+/** Collection **/
+ul.collection .collection-item.waves-effect {
+  display: block;
+  padding-bottom: 0;
+  will-change: initial;
+}
+
+ul.collection .collection-item .secondary-content i {
+  margin-top: -28px;
+}
+
+ul.collection .collection-item .gwt-Label,
+ul.collection .collection-item a:first-child {
+  display: block;
+}
+
+ul.collection > li > div > div:first-child {
+  float: left;
+}

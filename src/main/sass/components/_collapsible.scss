@@ -7,40 +7,38 @@
 }
 
 .collapsible-header {
-  &:focus {
-    outline: 0
-  }
-
-  display: flex;
+  display: block;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  line-height: 1.5;
-  padding: 1rem;
+  min-height: $collapsible-height;
+  line-height: $collapsible-height;
+  padding: 0 1rem;
   background-color: $collapsible-header-color;
   border-bottom: 1px solid $collapsible-border-color;
 
   i {
     width: 2rem;
     font-size: 1.6rem;
-    display: inline-block;
+    line-height: $collapsible-height;
+    display: block;
+    float: left;
     text-align: center;
     margin-right: 1rem;
   }
-}
-.keyboard-focused .collapsible-header:focus {
-  background-color: #eee;
 }
 
 .collapsible-body {
   display: none;
   border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
-  padding: 2rem;
+
+  p {
+    margin: 0;
+    padding: 2rem;
+  }
 }
 
-// Sidenav collapsible styling
-.sidenav,
-.sidenav.fixed {
+// sideNav collapsible styling
+.side-nav {
 
   .collapsible {
     border: none;
@@ -54,9 +52,8 @@
     border: none;
     line-height: inherit;
     height: inherit;
-    padding: 0 $sidenav-padding;
+    margin: 0 1rem;
 
-    &:hover { background-color: rgba(0,0,0,.05); }
     i { line-height: inherit; }
   }
 
@@ -64,10 +61,7 @@
     border: 0;
     background-color: $collapsible-header-color;
 
-    li a {
-      padding: 0 (7.5px + $sidenav-padding)
-               0 (15px + $sidenav-padding);
-    }
+    li a { margin: 0 1rem 0 2rem; }
   }
 
 }

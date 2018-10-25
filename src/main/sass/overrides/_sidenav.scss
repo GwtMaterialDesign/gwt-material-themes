@@ -1,0 +1,153 @@
+/**
+* SideNav
+**/
+ul.side-nav {
+  padding-bottom: 0px;
+  height: 100%;
+}
+
+ul.side-nav li > div {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+ul.side-nav .brand-logo {
+  font-size: 2.1rem;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+ul.side-nav.fixed a,
+ul.side-nav a {
+  width: 100%;
+  display: flex;
+  line-height: normal;
+  align-items: center;
+}
+
+ul.side-nav li {
+  padding: 0 !important;
+}
+
+ul.side-nav i {
+  font-size: 2em;
+  width: 2rem;
+  line-height: inherit;
+}
+
+ul.side-nav .sidenav-content i {
+  font-size: 1.6em;
+}
+
+ul.side-nav .collapsible-header,
+.side-nav .collapsible-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+ul.side-nav .collapsible-body li {
+  overflow: hidden;
+}
+
+ul.side-nav .collapsible-body li.active {
+  background-color: #eeeeee !important;
+}
+
+ul.side-nav.right-aligned {
+  left: auto !important;
+}
+
+/**
+* Sidenav Content
+**/
+.sidenav-content {
+  padding: 0 15px;
+}
+
+/**
+* SideNav Card
+**/
+ul.side-nav.card,
+.side-nav.drawer-with-header {
+  position: absolute;
+}
+
+ul.side-nav.card {
+  margin: 20px;
+  height: auto;
+  width: 232px;
+  padding-bottom: 0;
+  top: 64px;
+}
+
+/**
+* SideNav Drawer
+**/
+ul.side-nav.drawer-with-header {
+  top: 64px;
+  height: calc(100vh - 64px);
+}
+
+ul.side-nav.push-with-header {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  top: 64px;
+  height: calc(100vh - 64px);
+}
+
+/**
+* Sidenav Mini
+**/
+ul.side-nav.mini,
+ul.side-nav.mini-with-expand {
+  top: 65px;
+  text-align: center;
+  overflow-x: hidden;
+  height: calc(100vh - 64px);
+}
+
+ul.side-nav.mini li div {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+ul.side-nav.mini li a span {
+  display: none;
+}
+
+ul.side-nav .collapsible-body li.active a {
+  color: #444;
+}
+
+/**
+* SideNav - Mini with Expand
+**/
+ul.side-nav.mini-with-expand {
+  left: 0px !important;
+}
+
+ul.side-nav.mini-with-expand.right-aligned {
+  right: 0px !important;
+  left: inherit !important;
+}
+
+ul.side-nav.mini-with-expand.expanded li a span {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.side-nav.mini-with-expand li a span {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+}
+
+/**
+* SideNav - Overlay
+**/
+#sidenav-overlay {
+  visibility: hidden;
+}

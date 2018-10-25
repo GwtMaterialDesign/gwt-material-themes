@@ -1,0 +1,22 @@
+/**
+* Others
+**/
+.fullBackground {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.showPanel {
+  -webkit-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.weatherContainer .card {
+  background-color: initial !important;
+}

@@ -1,0 +1,507 @@
+/**
+* InputField - Outlined
+**/
+
+.input-field label {
+  left: 0 !important;
+}
+
+.input-field label.required:before,
+.input-field label span.required:before {
+  content: "*";
+  float: right;
+  margin-left: 8px;
+  font-size: 1.2em;
+  color: #f44336;
+}
+
+.input-field.disabled label.required:before,
+.input-field.disabled label span.required:before,
+.input-field.listbox-wrapper label.disabled:before {
+  display: none;
+}
+
+.col .input-field label {
+  left: 0px;
+}
+
+.row .col.input-field {
+  min-height: 72px;
+  margin-bottom: 0px;
+}
+
+.row .col.input-field textarea {
+  margin-bottom: 4px;
+}
+
+.row .col.input-field input {
+  margin-bottom: 8px;
+}
+
+.row > .input-field label {
+  left: 0.75rem !important;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+
+/**
+* IE Fixed for having the huge clear button
+**/
+.input-field input::-ms-clear {
+  display: none;
+}
+
+/**
+* Autofill fixed layout
+**/
+input:-webkit-autofill + label {
+  font-size: 0.8rem !important;
+  transform: translateY(-112%);
+}
+
+nav .input-field {
+  height: 100%;
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill !important;
+  -webkit-animation-fill-mode: both !important;;
+}
+
+/**
+* Type[number] spinner fixed for firefox and safari
+**/
+.input-field.disabled input[type=number]::-webkit-inner-spin-button,
+.input-field.disabled input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-field.disabled input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-field.disabled input[type="number"]:focus {
+  color: rgba(0, 0, 0, 0.26);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.input-field.disabled label {
+  color: rgba(0, 0, 0, 0.26) !important;
+}
+
+/**
+* Aligned Label
+**/
+.input-field.aligned-label input {
+  width: 70%;
+  display: inline;
+  position: relative;
+  vertical-align: middle;
+}
+
+.input-field.aligned-label label,
+.input-field.aligned-label label.active {
+  width: 30%;
+  display: inline;
+  position: relative;
+  float: left;
+  vertical-align: middle;
+  transform: none;
+  font-size: 1em;
+  color: rgba(0, 0, 0, .87);
+  top: 24px;
+}
+
+.input-field.aligned-label .field-error-label,
+.input-field.aligned-label .field-success-label,
+.input-field.aligned-label .field-helper-label {
+  padding-left: 30%;
+}
+
+.input-field.filled input,
+.input-field.outlined input {
+  padding: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.input-field.filled label,
+.input-field.outlined label {
+  margin-left: 12px;
+}
+
+.input-field.filled label:active,
+.input-field.outlined label:active {
+  margin-left: 8px;
+}
+
+/**
+* With Icons
+**/
+.input-field.filled .prefix ~ input,
+.input-field.filled .prefix ~ textarea,
+.input-field.outlined .prefix ~ input,
+.input-field.outlined .prefix ~ textarea {
+  margin-left: 0px;
+  padding-left: 56px !important;
+  width: 100%;
+}
+
+.input-field.filled .prefix,
+.input-field.outlined .prefix {
+  padding-top: 6px;
+  padding-left: 8px;
+  color: #757575;
+}
+
+/**
+* Filled Type
+**/
+.input-field.filled input,
+.input-field.filled textarea {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px 4px 0px 0px;
+  padding-top: 18px;
+}
+
+.input-field.filled.disabled input,
+.input-field.filled.disabled textarea,
+.input-field.filled.listbox-wrapper input.select-dropdown[disabled] {
+  background: transparent;
+}
+
+.input-field.filled textarea,
+.input-field.outlined textarea {
+  padding-left: 12px;
+  width: calc(100% - 24px);
+  padding-right: 12px;
+}
+
+.input-field.filled input:focus {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.input-field.filled label.active {
+  -webkit-transform: translateY(-64%);
+  -moz-transform: translateY(-64%);
+  -ms-transform: translateY(-64%);
+  -o-transform: translateY(-64%);
+  transform: translateY(-64%);
+}
+
+.input-field.filled.listbox-wrapper input.select-dropdown {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px 4px 0px 0px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.input-field.filled.listbox-wrapper label {
+  padding-top: 14px;
+}
+
+.input-field.filled .field-error-label,
+.input-field.filled .field-success-label,
+.input-field.filled .field-helper-label {
+  padding-left: 12px;
+}
+
+/**
+* Outlined Type
+**/
+.input-field.outlined input,
+.input-field.outlined input.valid,
+.input-field.outlined textarea,
+.input-field.outlined input.select-dropdown {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.input-field.outlined input.select-dropdown {
+  padding-left: 12px;
+}
+
+.input-field.outlined .select-wrapper + label {
+  top: -10px;
+  background: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 8px;
+}
+
+.input-field.outlined input:focus,
+.input-field.outlined textarea:focus,
+.input-field.outlined input.picker__input--active {
+  border: 2px solid #42a5f5;
+  box-shadow: none;
+}
+
+.input-field.outlined label.active,
+.input-field.outlined input:-webkit-autofill + label {
+  padding: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: white;
+  margin-top: 4px;
+  margin-left: 8px;
+  z-index: 1;
+}
+
+.modal .input-field.outlined label.active,
+.modal .input-field.outlined .select-wrapper + label,
+.modal .input-field.outlined input:-webkit-autofill + label {
+  background-color: #fafafa;
+}
+
+.input-field.outlined.field-error input.select-dropdown,
+.input-field.outlined input.invalid,
+.input-field.outlined input.invalid:focus,
+.input-field.outlined textarea.invalid,
+.input-field.outlined textarea.invalid:focus,
+.input-field.outlined input.invalid.picker__input--active {
+  border: 2px solid #f44336;
+  box-shadow: none;
+  margin-bottom: 8px;
+}
+
+.input-field.outlined.field-success input.select-dropdown,
+.input-field.outlined input.valid,
+.input-field.outlined input.valid:focus,
+.input-field.outlined textarea.valid,
+.input-field.outlined textarea.valid:focus,
+.input-field.outlined input.valid.picker__input--active {
+  border: 2px solid #4caf50;
+  box-shadow: none;
+}
+
+.input-field.outlined .field-error-label,
+.input-field.outlined .field-success-label,
+.input-field.outlined .field-helper-label {
+  margin-left: 14px;
+}
+
+.input-field.field-error.listbox-wrapper.outlined input.select-dropdown {
+  border: 2px solid #F44336;
+}
+
+/**
+* TextArea
+**/
+.input-field.aligned-label textarea {
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+/**
+* ListBox
+**/
+.input-field .select-wrapper.gwt-ListBox + label.active {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.input-field .select-wrapper.gwt-ListBox .caret:before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent #9c9c9c transparent;
+}
+
+.input-field.aligned-label .select-wrapper.gwt-ListBox .caret:before {
+  bottom: 26px;
+}
+
+.input-field .select-wrapper.gwt-ListBox .caret.disabled:before {
+  border-color: transparent transparent #c7c7c7 transparent;
+}
+
+.input-field .select-wrapper.gwt-ListBox .caret.disabled,
+.input-field .select-wrapper .caret {
+  color: transparent;
+  bottom: 0;
+}
+
+.input-field.listbox-wrapper {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.field-error.input-field.listbox-wrapper input.select-dropdown {
+  border-bottom: 1px solid #F44336 !important;
+  box-shadow: 0 1px 0 0 #F44336 !important;
+}
+
+.field-success.input-field.listbox-wrapper input.select-dropdown {
+  border-bottom: 1px solid #4CAF50 !important;
+  box-shadow: 0 1px 0 0 #4CAF50 !important;
+}
+
+/**
+* ListBox - AlignedLabel
+**/
+.input-field.aligned-label .select-wrapper {
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+/**
+* ListBox - Fixed for Safari9+ Issue with Blinking Indicator on IOS Devices
+* Read More - https://stackoverflow.com/questions/38848742/material-select-blinking-on-ios
+**/
+input.select-dropdown {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.input-field.outlined input:focus,
+.input-field.outlined textarea:focus,
+.input-field.outlined input.picker__input--active {
+  border: 2px solid $input-outlined-border-color;
+  box-shadow: none;
+}
+
+/**
+* Blockquote
+**/
+blockquote {
+  border-left: $blockquote-border-left;
+}
+
+/**
+* CheckBox
+**/
+[type="checkbox"]:not(:checked ),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.oldCheckBox input {
+  position: initial !important;
+  opacity: 0 !important;
+}
+
+.oldCheckBox input {
+  position: initial !important;
+  opacity: 0 !important;
+}
+
+/**
+* ReadOnly States
+**/
+.read-only-toggle input:hover {
+  cursor: text;
+  box-shadow: 1px 1px #e9e9e9;
+}
+
+.read-only input,
+.read-only textarea {
+  border: none !important;
+  box-shadow: none !important;
+  color: #000 !important;
+}
+
+.read-only label {
+  top: 12px !important;
+  -webkit-transform: translateY(-140%) !important;
+  transform: translateY(-140%) !important;
+  font-size: 0.8em !important;
+  color: #9e9e9e !important;
+}
+
+.read-only .select-wrapper .caret {
+  display: none !important;
+}
+
+/**
+* Search
+**/
+.input-field input[type=search] + label {
+  left: 1rem !important;
+}
+
+/**
+* Search Result
+**/
+.input-field input[type=search] {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.search-result {
+  margin: 0;
+  border-top: 1px solid #e9e9e9;
+  background-color: #fff;
+  max-height: 500px;
+  overflow: auto;
+  z-index: 995;
+  position: relative;
+}
+
+.search-result a {
+  display: block;
+  border-bottom: 1px solid #e9e9e9;
+  padding-left: 20px;
+}
+
+.search-result a span {
+  margin-left: 0px;
+}
+
+.search-result a:hover,
+.search-result a.higlighted {
+  background-color: #eeeeee;
+}
+
+.search-result a img {
+  width: 52px;
+  margin-top: 5px;
+  float: left;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  height: 52px;
+}
+
+/**
+* Switch
+**/
+.switch label input[type=checkbox]:checked + .lever.disabled {
+  background-color: #D4D4D4;
+}
+
+/**
+* Range Slider
+* Fixed for IE issue with multiple indicator https://github.com/GwtMaterialDesign/gwt-material/issues/815
+**/
+::-ms-tooltip {
+  display: none;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: #deddde !important;
+}
