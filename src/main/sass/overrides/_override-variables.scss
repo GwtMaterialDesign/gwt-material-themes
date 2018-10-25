@@ -1,23 +1,45 @@
-/**
-* Badge
-*/
+// Badge
 $badge-bg-color: $secondary-color;
+$sidenav-badge-height: 20px;
+$sidenav-badge-font-size: 0.7em;
+$sidenav-badge-border-radius: 3px;
+$badge-circle-width: 24px;
+$badge-circle-height: 24px;
 
-/**
-* Button
-*/
+// Blockquote
+$blockquote-border-left: 5px solid $secondary-color !important;
+
+// Button
 $button-ghost-text-color: $secondary-color;
 $button-ghost-bg-color: 0;
 $button-ghost-border: 1.6px solid $secondary-color;
 $button-ghost-active-bg-color: $secondary-color;
+$button-ghost-active-text-color: #ffffff;
+$button-ghost-padding: 0px 20px;
+$button-ghost-border-radius: 4px;
+$button-ghost-font-size: 1em;
+$button-ghost-height: 36px;
 $button-outlined-border: 1px solid #00001e;
 $button-outlined-bg-color: #ffffff;
 $button-outlined-text-color: #000000;
+$button-outlined-box-shadow: none;
+$button-outlined-disabled-bg-color: transparent;
 
-/**
-* Chips
-*/
+// Cards
+$landscape-card-content-width: 70%;
+$landscape-card-image-width: 30%;
+$landscape-card-height: 120px;
+
+// Chips
 $chip-bg-color: #E4E4E4;
+$chip-height: 32px;
+$chip-font-size: 13px;
+$chip-text-color: rgba(0, 0, 0, 0.6);
+$chip-border-radius: 16px;
+$chip-image-width: 32px;
+$chip-image-height: 32px;
+$chip-icon-height: 32px;
+$chip-icon-font-size: 16px;
 $chip-outlined-border: 1px solid #00001e;
 $chip-outlined-bg-color: transparent;
 $chip-outlined-letter-width: 30px;
@@ -26,27 +48,27 @@ $chip-letter-width: 32px;
 $chip-letter-height: 32px;
 $chip-letter-font-size: 1.2em;
 
-/**
-* Date Picker
-*/
+// Date Picker
 $datepicker-border-color: $secondary-color;
+$datepicker-landscape-frame-width: 585px;
+$datepicker-landscape-frame-height: 350px;
 
-/**
-* Input Fields
-*/
+// Image Slider
+$image-slider-indicator-color: $secondary-color;
+
+// Input Fields
 $input-outlined-border-color: $secondary-color;
 
-/**
-* Blockquote
-*/
-$blockquote-border-left: 5px solid $secondary-color !important;
+// Loader Wrapper
+$loader-wrapper-bg-color: rgba(255, 255, 255, 0.701961);
+$progress-bar-bg-color: #EBEEF1;
 
-/**
-* Table
-*/
+// NavBar
+$navbar-tall-height: 128px;
+$navbar-shrink-height: 200px;
+
+// Table
 $table-top-panel-bg-color: $secondary-color;
 
-/**
-* Tabs
-*/
+// Tabs
 $tabs-wrapper-bg-color: $secondary-color;

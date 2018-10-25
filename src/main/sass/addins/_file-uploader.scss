@@ -2,16 +2,16 @@
 * File Uploader
 **/
 .fileuploader .upload-label {
-  background-color: #ff9800 !important;
+  background-color: $file-uploader-color !important;
 }
 
 .fileuploader .upload-label i {
-  background: #fff !important;
-  color: #ff9800 !important;
+  background: #ffffff !important;
+  color: $file-uploader-color !important;
 }
 
 .fileuploader.active {
-  background: #ff9800 !important;
+  background: $file-uploader-color !important;
 }
 
 .fileuploader.active .upload-label {
@@ -19,9 +19,9 @@
 }
 
 .preview-container .previews .zdrop-info .preview-icon {
-  color: #ff9800 !important;
+  color: $file-uploader-color !important;
 }
 
 .preview-container .header {
-  background-color: #ff9800 !important;
+  background-color: $file-uploader-color !important;
 }

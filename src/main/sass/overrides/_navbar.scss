@@ -16,7 +16,7 @@ nav .nav-content {
 * NavBar tall
 **/
 nav .navbar-tall {
-  height: 128px;
+  height: $navbar-tall-height;
 }
 
 nav .nav-wrapper .side-nav i {
@@ -28,11 +28,11 @@ nav .nav-wrapper .side-nav i {
 * NavBar Shrink
 **/
 nav.navbar-shrink {
-  height: 200px;
+  height: $navbar-shrink-height;
   line-height: 64px;
   top: 0;
   left: 0;
-  background-color: #0683c9;
+  background-color: $secondary-color;
 }
 
 nav .brand-logo img {

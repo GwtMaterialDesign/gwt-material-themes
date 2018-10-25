@@ -3,29 +3,29 @@
 **/
 .chip {
   display: inline-block;
-  height: 32px;
-  font-size: 13px;
+  height: $chip-height;
+  font-size: $chip-font-size;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
-  line-height: 32px;
+  color: $chip-text-color;
+  line-height: $chip-height;
   padding: 0 12px;
-  border-radius: 16px;
-  background-color: #E4E4E4;
+  border-radius: $chip-border-radius;
+  background-color: $chip-bg-color;
 }
 
 .chip img {
   float: left;
   margin: 0 8px 0 -12px;
-  height: 32px;
-  width: 32px;
+  height: $chip-image-height;
+  width: 32 $chip-image-width;
   border-radius: 50%;
 }
 
 .chip i.material-icons {
   cursor: pointer;
   float: right;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: $chip-icon-font-size;
+  line-height: $chip-icon-height;
   padding-left: 8px;
 }
 

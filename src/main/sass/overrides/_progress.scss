@@ -2,7 +2,7 @@
 * Progress
 */
 .progress {
-  background-color: #EBEEF1;
+  background-color: $progress-bar-bg-color;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -19,4 +19,5 @@
   transition: 1s all;
   -webkit-transition: 1s all;
   -moz-transition: 1s all;
+  background-color: $progress-bar-color;
 }

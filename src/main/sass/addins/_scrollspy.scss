@@ -2,9 +2,9 @@
 * Scrollspy
 **/
 .table-of-contents a.active {
-  border-left: 2px solid #ff9800 !important;
+  border-left: 2px solid $scrollspy-color !important;
 }
 
 .table-of-contents a:hover {
-  border-left: 1px solid #ff9800 !important;
+  border-left: 1px solid $scrollspy-color !important;
 }

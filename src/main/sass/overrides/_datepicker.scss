@@ -11,9 +11,9 @@
 
 .landscape .picker__frame {
   margin: 0 auto;
-  max-width: 585px;
-  width: 585px;
-  max-height: 350px !important;
+  max-width: $datepicker-landscape-frame-width;
+  width: $datepicker-landscape-frame-width;
+  max-height: $datepicker-landscape-frame-height !important;
 }
 
 .landscape .picker__wrap {

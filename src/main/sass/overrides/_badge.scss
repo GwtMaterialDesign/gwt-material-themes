@@ -17,21 +17,21 @@ nav ul a span.badge {
 }
 
 .sideBarBadge {
-  height: 20px !important;
+  height: $sidenav-badge-height !important;
   line-height: 0 !important;
   padding: 10px !important;
   color: #fff !important;
-  border-radius: 3px !important;
-  font-size: 0.7em !important;
+  border-radius: $sidenav-badge-border-radius !important;
+  font-size: $sidenav-badge-font-size !important;
 }
 
 .badge.circle {
   position: absolute;
   min-width: 0 !important;
   border-radius: 100% !important;
-  height: 24px !important;
+  height: $badge-circle-height !important;
   top: -12px;
-  width: 24px;
+  width: $badge-circle-width;
   font-size: 0.6rem !important;
   text-align: center;
   padding: 0 !important;

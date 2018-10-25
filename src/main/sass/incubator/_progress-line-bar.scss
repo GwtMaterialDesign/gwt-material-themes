@@ -2,5 +2,9 @@
 * Progress Line Bar
 **/
 .progress-line-bar .progress-item.active {
+  background: $progress-line-bar-active-color;
+}
+
+.progress-line-bar {
   background: $progress-line-bar-color;
 }

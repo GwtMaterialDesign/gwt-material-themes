@@ -1,11 +1,37 @@
-/**
-* Autocomplete
-*/
+// Autocomplete
 $autocomplete-focus-border: 2px solid $secondary-color !important;
 
-/**
-* Carousel
-*/
-// TODO: Test lighten
+// Carousel
 $carousel-dots-color-active: $secondary-color !default;
-$carousel-dots-color: lighten($carousel-dots-color-active, 23%);
+$carousel-dots-color: lighten($carousel-dots-color-active, 23%) !default;
+
+// ComboBox
+$combobox-border-color: $secondary-color !default;
+
+// File Uploader
+$file-uploader-color: $secondary-color !default;
+
+// Rating
+$rating-color: $secondary-color !default;
+
+// Rich Editor
+$rich-editor-button-color: $secondary-color !default;
+$rich-editor-button-disabled-color: $button-bg-color-disabled !default;
+
+// Scrollspy
+$scrollspy-color: $secondary-color !default;
+
+// Stepper
+$stepper-active-color: $secondary-color !default;
+
+// Time Picker
+$time-picker-header-color: $secondary-color !default;
+$time-picker-button-color: $secondary-color !default;
+$time-picker-tick-color: $secondary-color !default;
+$time-picker-input-color: $secondary-color !default;
+
+// Tree Item
+$tree-item-color: $secondary-color !default;
+
+// Window
+$window-toolbar-color: $secondary-color !default;

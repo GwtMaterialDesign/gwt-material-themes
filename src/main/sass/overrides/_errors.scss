@@ -3,19 +3,19 @@
 **/
 .field-error,
 .field-error-picker input {
-  border-bottom: 1px solid #F44336 !important;
-  box-shadow: 0 1px 0 0 #F44336 !important;
+  border-bottom: 1px solid $error-color !important;
+  box-shadow: 0 1px 0 0 $error-color !important;
 }
 
 .field-error-label,
 .field-success-label {
-  color: #F44336 !important;
+  color: $error-color !important;
   font-size: 12px;
   opacity: 1 !important;
 }
 
 .field-success-label {
-  color: #4CAF50 !important;
+  color: $success-color !important;
 }
 
 .field-helper-label {
@@ -26,8 +26,8 @@
 
 .field-success,
 .field-success-picker input {
-  border-bottom: 1px solid #4CAF50 !important;
-  box-shadow: 0 1px 0 0 #4CAF50 !important;
+  border-bottom: 1px solid $success-color !important;
+  box-shadow: 0 1px 0 0 $success-color !important;
 }
 
 /**
@@ -36,7 +36,7 @@
 .input-field.hoverable-status .field-error-label,
 .input-field.hoverable-status .field-success-label {
   position: absolute;
-  background: #D32F2F;
+  background: $error-color;
   color: white !important;
   min-height: 40px;
   border-radius: 4px;
@@ -54,7 +54,7 @@
 }
 
 .input-field.hoverable-status .field-success-label {
-  background: #4caf50;
+  background: $success-color;
 }
 
 /**
@@ -74,11 +74,11 @@
 }
 
 .input-field.hoverable-status .field-error-label.left:before {
-  border-bottom: solid 12px #D32F2F;
+  border-bottom: solid 12px $error-color;
 }
 
 .input-field.hoverable-status .field-success-label.left:before {
-  border-bottom: solid 12px #4caf50;
+  border-bottom: solid 12px $success-color;
 }
 
 .input-field.hoverable-status .field-error-label.top:before,
@@ -91,13 +91,12 @@
 }
 
 .input-field.hoverable-status .field-error-label.top:before {
-  border-top: solid 12px #D32F2F;
+  border-top: solid 12px $error-color;
 }
 
 .input-field.hoverable-status .field-success-label.top:before {
-  border-top: solid 12px #4caf50;
+  border-top: solid 12px $success-color;
 }
-
 
 /**
 * Status Icon
@@ -106,7 +105,7 @@
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #d32f2f;
+  color: $error-color;
   z-index: 1;
 }
 

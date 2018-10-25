@@ -48,26 +48,26 @@ button.btn-outlined:hover,
 button.btn-outlined:focus,
 button.btn-outlined:active {
   border: $button-outlined-border;
-  box-shadow: none;
+  box-shadow: $button-outlined-box-shadow;
   background-color: $button-outlined-bg-color;
   color: $button-outlined-text-color;
 }
 
 button.btn-outlined.disabled {
-  background-color: transparent !important;
+  background-color: $button-outlined-disabled-bg-color !important;
 }
 
 /**
 * Ghost Button
 **/
 button.btn-ghost, button.btn-ghost:focus {
-  padding: 0px 20px;
-  border-radius: 4px;
+  padding: $button-ghost-padding;
+  border-radius: $button-ghost-border-radius;
   color: $button-ghost-text-color;
-  font-size: 1em;
+  font-size: $button-ghost-font-size;
   font-weight: 400;
   background: $button-ghost-bg-color;
-  height: 36px;
+  height: $button-ghost-height;
   text-transform: uppercase;
   border: $button-ghost-border;
   outline: 0;
@@ -83,6 +83,6 @@ button.btn-ghost.disabled {
 
 button.btn-ghost:hover, button.btn-ghost:active {
   background: $button-ghost-active-bg-color;
-  color: #fff;
+  color: $button-ghost-active-text-color;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }

@@ -19,18 +19,18 @@
 }
 
 .landscape .card-content {
-  width: 70% !important;
+  width: $landscape-card-content-width !important;
   float: left;
 }
 
 .landscape .card-image {
-  width: 30% !important;
+  width: $landscape-card-image-width !important;
   float: left;
 }
 
 .landscape .card-image img,
 .horizontal.card {
-  height: 120px;
+  height: $landscape-card-height;
 }
 
 .landscape .card-image {

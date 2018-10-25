@@ -12,7 +12,7 @@
   float: right;
   margin-left: 8px;
   font-size: 1.2em;
-  color: #f44336;
+  color: $error-color;
 }
 
 .input-field.disabled label.required:before,
@@ -241,7 +241,7 @@ input:-webkit-autofill {
 .input-field.outlined input:focus,
 .input-field.outlined textarea:focus,
 .input-field.outlined input.picker__input--active {
-  border: 2px solid #42a5f5;
+  border: 2px solid $secondary-color;
   box-shadow: none;
 }
 
@@ -268,7 +268,7 @@ input:-webkit-autofill {
 .input-field.outlined textarea.invalid,
 .input-field.outlined textarea.invalid:focus,
 .input-field.outlined input.invalid.picker__input--active {
-  border: 2px solid #f44336;
+  border: 2px solid $error-color;
   box-shadow: none;
   margin-bottom: 8px;
 }
@@ -279,7 +279,7 @@ input:-webkit-autofill {
 .input-field.outlined textarea.valid,
 .input-field.outlined textarea.valid:focus,
 .input-field.outlined input.valid.picker__input--active {
-  border: 2px solid #4caf50;
+  border: 2px solid $success-color;
   box-shadow: none;
 }
 
@@ -290,7 +290,7 @@ input:-webkit-autofill {
 }
 
 .input-field.field-error.listbox-wrapper.outlined input.select-dropdown {
-  border: 2px solid #F44336;
+  border: 2px solid $error-color;
 }
 
 /**
@@ -346,13 +346,13 @@ input:-webkit-autofill {
 }
 
 .field-error.input-field.listbox-wrapper input.select-dropdown {
-  border-bottom: 1px solid #F44336 !important;
-  box-shadow: 0 1px 0 0 #F44336 !important;
+  border-bottom: 1px solid $error-color !important;
+  box-shadow: 0 1px 0 0 $error-color !important;
 }
 
 .field-success.input-field.listbox-wrapper input.select-dropdown {
-  border-bottom: 1px solid #4CAF50 !important;
-  box-shadow: 0 1px 0 0 #4CAF50 !important;
+  border-bottom: 1px solid $success-color !important;
+  box-shadow: 0 1px 0 0 $success-color !important;
 }
 
 /**
@@ -382,6 +382,11 @@ input.select-dropdown {
 .input-field.outlined input.picker__input--active {
   border: 2px solid $input-outlined-border-color;
   box-shadow: none;
+}
+
+.input-field.hoverable-status.listbox-wrapper.field-error .caret,
+.input-field.hoverable-status.listbox-wrapper.field-success .caret {
+  display: none;
 }
 
 /**
