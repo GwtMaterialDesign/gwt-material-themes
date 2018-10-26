@@ -28,7 +28,4 @@ public interface ThemeOrange extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/orange/css/materialize.orange.min.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/orange/css/overridecss.orange.min.css")
-    TextResource overrides();
 }

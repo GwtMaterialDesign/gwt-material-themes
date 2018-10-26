@@ -28,7 +28,4 @@ public interface ThemePurple extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/purple/css/materialize.purple.min.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/purple/css/overridecss.purple.min.css")
-    TextResource overrides();
 }

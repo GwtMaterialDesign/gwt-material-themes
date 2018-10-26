@@ -28,7 +28,4 @@ public interface ThemeYellowDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/yellow/css/materialize.yellow.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/yellow/css/overridecss.yellow.css")
-    TextResource overrides();
 }

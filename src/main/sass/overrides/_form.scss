@@ -321,8 +321,9 @@ input:-webkit-autofill {
   bottom: 12px;
   width: 0;
   height: 0;
-  border: $input-select-caret-border-width solid transparent;
-  border-bottom-color: $input-select-caret-color;
+  border-style: solid;
+  border-width: $input-select-caret-border-width;
+  border-color: transparent transparent $input-select-caret-color;
 }
 
 .input-field.aligned-label .select-wrapper.gwt-ListBox .caret:before {
