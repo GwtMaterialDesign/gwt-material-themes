@@ -127,25 +127,6 @@
           </executions>
       </plugin>
       <plugin>
-        <groupId>com.github.warmuuh</groupId>
-        <artifactId>libsass-maven-plugin</artifactId>
-        <version>0.2.10-libsass_3.5.3</version>
-        <executions>
-          <execution>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <inputPath>${basedir}/src/main/sass</inputPath>
-          <outputPath>${basedir}/target/</outputPath>
-          <includePath>${basedir}/src/main/sass/plugins/</includePath>
-          <generateSourceMap>false</generateSourceMap>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
@@ -155,4 +136,34 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>generate-theme</id>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.github.warmuuh</groupId>
+            <artifactId>libsass-maven-plugin</artifactId>
+            <version>0.2.10-libsass_3.5.3</version>
+            <executions>
+              <execution>
+                <phase>generate-resources</phase>
+                <goals>
+                  <goal>compile</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <inputPath>${basedir}/src/main/sass</inputPath>
+              <outputPath>${basedir}/target/</outputPath>
+              <includePath>${basedir}/src/main/sass/plugins/</includePath>
+              <generateSourceMap>false</generateSourceMap>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
