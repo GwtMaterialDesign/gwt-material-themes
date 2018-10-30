@@ -139,7 +139,7 @@
 
   <profiles>
     <profile>
-      <id>generate-theme</id>
+      <id>generateTheme</id>
 
       <build>
         <plugins>
@@ -149,18 +149,19 @@
             <version>0.2.10-libsass_3.5.3</version>
             <executions>
               <execution>
-                <phase>generate-resources</phase>
+                <id>debug-css-resource</id>
+                <phase>package</phase>
                 <goals>
                   <goal>compile</goal>
                 </goals>
+                <configuration>
+                  <inputPath>${basedir}/src/main/sass</inputPath>
+                  <outputPath>${basedir}/target/</outputPath>
+                  <includePath>${basedir}/src/main/sass/plugins/</includePath>
+                  <generateSourceMap>false</generateSourceMap>
+                </configuration>
               </execution>
             </executions>
-            <configuration>
-              <inputPath>${basedir}/src/main/sass</inputPath>
-              <outputPath>${basedir}/target/</outputPath>
-              <includePath>${basedir}/src/main/sass/plugins/</includePath>
-              <generateSourceMap>false</generateSourceMap>
-            </configuration>
           </plugin>
         </plugins>
       </build>
