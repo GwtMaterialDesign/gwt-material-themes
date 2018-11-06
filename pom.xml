@@ -18,6 +18,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+    <sass.source>${basedir}/src/main/sass</sass.source>
+    <sass.target>${basedir}/src/main/sass/_generated</sass.target>
   </properties>
 
   <scm>
@@ -143,24 +145,25 @@
 
       <build>
         <plugins>
+
+          <!-- SASS Compiler -->
           <plugin>
             <groupId>com.github.warmuuh</groupId>
             <artifactId>libsass-maven-plugin</artifactId>
             <version>0.2.10-libsass_3.5.3</version>
             <executions>
               <execution>
-                <id>debug-css-resource</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>compile</goal>
-                </goals>
-                <configuration>
-                  <inputPath>${basedir}/src/main/sass</inputPath>
-                  <outputPath>${basedir}/target/</outputPath>
-                  <includePath>${basedir}/src/main/sass/plugins/</includePath>
-                  <generateSourceMap>false</generateSourceMap>
-                </configuration>
-              </execution>
+              <id>debug-css-resource</id>
+              <phase>package</phase>
+              <goals>
+                <goal>compile</goal>
+              </goals>
+              <configuration>
+                <inputPath>${sass.source}</inputPath>
+                <outputPath>${sass.target}</outputPath>
+                <generateSourceMap>false</generateSourceMap>
+              </configuration>
+            </execution>
             </executions>
           </plugin>
         </plugins>
