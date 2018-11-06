@@ -1,19 +1,35 @@
+
 /**
-* Async Switch
+* Async Switch and CheckBox
 */
+.async.gwt-CheckBox,
 .async.switch {
   position: relative;
-  display: inline-block; }
+  display: inline-block !important;
+}
 
+.async.gwt-CheckBox .loader-wrapper,
 .async.switch .loader-wrapper {
   position: absolute;
   background: transparent;
-  margin-top: -8px; }
+}
 
+.async.gwt-CheckBox .preloader-wrapper.active,
 .async.switch .preloader-wrapper.active {
   margin: auto;
   width: 28px;
-  height: 28px; }
+  height: 28px;
+}
+
+.async.gwt-CheckBox .preloader-wrapper.active {
+  position: absolute;
+  left: -4px;
+  top: -2px;
+}
+
+.async.gwt-CheckBox.loading label:before, .async.gwt-CheckBox.loading label:after {
+  visibility: hidden;
+}
 
 /**
 * Async Button
