@@ -143,6 +143,13 @@
     <profile>
       <id>generateTheme</id>
 
+      <dependencies>
+        <dependency>
+          <groupId>com.samaxes.maven</groupId>
+          <artifactId>minify-maven-plugin</artifactId>
+          <version>1.7.4</version>
+        </dependency>
+      </dependencies>
       <build>
         <plugins>
 
@@ -164,6 +171,37 @@
                 <generateSourceMap>false</generateSourceMap>
               </configuration>
             </execution>
+            </executions>
+          </plugin>
+
+          <!-- CSS Compressor -->
+          <plugin>
+            <groupId>com.samaxes.maven</groupId>
+            <artifactId>minify-maven-plugin</artifactId>
+            <version>1.7.4</version>
+            <executions>
+              <execution>
+                <id>default-minify</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>minify</goal>
+                </goals>
+                <configuration>
+
+                  <webappSourceDir>${basedir}/src/main/sass</webappSourceDir>
+                  <cssSourceDir>_generated</cssSourceDir>
+                  <cssSourceFiles>
+                    <cssSourceFile>materialize.css</cssSourceFile>
+                  </cssSourceFiles>
+                  <webappTargetDir>${basedir}/src/main/sass</webappTargetDir>
+                  <cssFinalFile>materialize.css</cssFinalFile>
+                  <skipMerge>true</skipMerge>
+                  <cssEngine>YUI</cssEngine>
+
+                  <jsEngine>CLOSURE</jsEngine>
+                  <closureCompilationLevel>SIMPLE_OPTIMIZATIONS</closureCompilationLevel>
+                </configuration>
+              </execution>
             </executions>
           </plugin>
         </plugins>
