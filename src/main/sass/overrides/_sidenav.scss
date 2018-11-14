@@ -151,3 +151,35 @@ ul.side-nav.mini-with-expand li a span {
 #sidenav-overlay {
   visibility: $sidenav-overlay-visibility;
 }
+
+/**
+* SideNav - Compact Density
+**/
+.compact.side-nav a {
+  height: $sidenav-compact-density-height;
+  line-height: $sidenav-compact-density-height;
+}
+
+.compact.side-nav li {
+  line-height: $sidenav-compact-density-height;
+}
+.compact.side-nav i {
+  font-size: $sidenav-compact-density-icon-size !important;
+  margin-left: 4px !important;
+}
+
+/**
+* SideNav - Comfortable Density
+**/
+.comfortable.side-nav a {
+  height: $sidenav-comfortable-density-height;
+  line-height: $sidenav-comfortable-density-height;
+}
+
+.comfortable.side-nav li {
+  line-height: $sidenav-comfortable-density-height;
+}
+.comfortable.side-nav i {
+  font-size: $sidenav-comfortable-density-icon-size !important;
+  margin-left: 4px !important;
+}

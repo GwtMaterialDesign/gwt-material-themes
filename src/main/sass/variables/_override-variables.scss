@@ -102,6 +102,10 @@ $sidenav-push-with-header-height: calc(100vh - 64px);
 $sidenav-mini-top: 65px;
 $sidenav-mini-height: calc(100vh - 64px);
 $sidenav-overlay-visibility: hidden;
+$sidenav-compact-density-height: 32px;
+$sidenav-compact-density-icon-size: 1.4em;
+$sidenav-comfortable-density-height: 40px;
+$sidenav-comfortable-density-icon-size: 1.6em;
 
 // Table
 $table-top-panel-bg-color: $secondary-color;
