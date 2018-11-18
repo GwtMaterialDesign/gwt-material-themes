@@ -1,0 +1,56 @@
+/**
+* Floating Action Button
+**/
+.horizontal.fixed-action-btn ul {
+  left: auto;
+}
+
+.fixed-action-btn.active ul {
+  visibility: visible;
+}
+
+.fixed-action-btn ul {
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 64px;
+  margin: 0;
+  visibility: hidden;
+}
+
+.fixed-action-btn.horizontal ul li {
+  display: inline-block;
+  margin: 15px 15px 0 0;
+}
+
+.fixed-action-btn.horizontal ul {
+  text-align: right;
+  right: 54px;
+  transform: translateY(106%);
+  height: 100%;
+  left: initial;
+  width: 500px;
+}
+
+ul li button.btn-floating {
+  opacity: 0;
+}
+
+.floatingButtonsItem ul li div {
+  transform: scale(0.4) translateY(40px);
+  -moz-transform: scale(0.4) translateY(40px);
+  -webkit-transform: scale(0.4) translateY(40px);
+  opacity: 0;
+  transition: 400ms all;
+  -webkit-transition: 400ms all;
+  -moz-transition: 400ms all;
+  margin-bottom: -10px;
+}
+
+.floatingButtonsItem:hover ul li div {
+  transform: scale(1) translateY(0px);
+  -moz-transform: scale(1) translateY(0px);
+  -webkit-transform: scale(1) translateY(0px);
+  opacity: 1;
+}

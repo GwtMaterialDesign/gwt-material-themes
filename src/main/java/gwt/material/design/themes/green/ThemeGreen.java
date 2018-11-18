@@ -28,7 +28,4 @@ public interface ThemeGreen extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/green/css/materialize.green.min.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/green/css/overridecss.green.min.css")
-    TextResource overrides();
 }

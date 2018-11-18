@@ -1,0 +1,76 @@
+
+/**
+* Async Switch and CheckBox
+*/
+.async.gwt-CheckBox,
+.async.switch {
+  position: relative;
+  display: inline-block !important;
+}
+
+.async.gwt-CheckBox .loader-wrapper,
+.async.switch .loader-wrapper {
+  position: absolute;
+  background: transparent;
+}
+
+.async.gwt-CheckBox .preloader-wrapper.active,
+.async.switch .preloader-wrapper.active {
+  margin: auto;
+  width: 28px;
+  height: 28px;
+}
+
+.async.gwt-CheckBox .preloader-wrapper.active {
+  position: absolute;
+  left: -4px;
+  top: -2px;
+}
+
+.async.gwt-CheckBox.loading label:before, .async.gwt-CheckBox.loading label:after {
+  visibility: hidden;
+}
+
+/**
+* Async Button
+*/
+button.async.loading i {
+  -webkit-animation: spin 400ms linear infinite;
+  -moz-animation: spin 400ms linear infinite;
+  animation: spin 400ms linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/**
+* Async ListBox
+**/
+.async.listbox-wrapper .progress-wrapper {
+  top: unset;
+  bottom: -4px;
+}
+
+/**
+* Async Collapsible
+**/
+ul.collapsible li.async .valign-wrapper {
+  top: unset;
+  bottom: 0px;
+}

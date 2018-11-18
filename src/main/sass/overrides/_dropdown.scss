@@ -1,0 +1,34 @@
+/**
+* Dropdown
+**/
+ul.dropdown-content {
+  max-height: 70vh !important;
+}
+
+ul.dropdown-content li > div {
+  font-size: 1.2rem;
+  display: block;
+  padding: 1rem 1rem;
+}
+
+ul.dropdown-content.disabled {
+  visibility: hidden;
+  display: none;
+}
+
+ul.dropdown-content li > a,
+.dropdown-content li > span {
+  width: 100%;
+}
+
+ul.dropdown-content a.disabled {
+  color: #e9e9e9 !important;
+}
+
+ul.dropdown-content a.disabled:hover {
+  background: #fff !important;
+}
+
+ul.dropdown-content {
+  z-index: 995 !important;
+}

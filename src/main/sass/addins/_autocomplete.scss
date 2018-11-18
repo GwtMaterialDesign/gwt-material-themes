@@ -1,0 +1,10 @@
+/* ==========================================================================
+   ADDINS CSS STYLES
+   ========================================================================== */
+
+/**
+* Autocomplete
+**/
+.multiValueSuggestBox-panel:focus {
+  border-bottom: $autocomplete-focus-border;
+}

@@ -28,7 +28,4 @@ public interface ThemeAmberDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/amber/css/materialize.amber.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/amber/css/overridecss.amber.css")
-    TextResource overrides();
 }

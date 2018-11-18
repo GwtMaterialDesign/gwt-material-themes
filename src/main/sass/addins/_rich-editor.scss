@@ -1,0 +1,14 @@
+/**
+* Rich Editor
+**/
+.editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
+  background: $rich-editor-button-color !important;
+}
+
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover, .note-editor .modal .file-field .btn:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
+  background: $rich-editor-button-color !important;
+}
+
+button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
+  background: $rich-editor-button-disabled-color !important;
+}

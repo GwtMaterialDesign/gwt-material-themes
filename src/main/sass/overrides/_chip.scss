@@ -1,0 +1,64 @@
+/**
+* Chips
+**/
+.chip {
+  display: inline-block;
+  height: $chip-height;
+  font-size: $chip-font-size;
+  font-weight: 500;
+  color: $chip-text-color;
+  line-height: $chip-height;
+  padding: 0 12px;
+  border-radius: $chip-border-radius;
+  background-color: $chip-bg-color;
+}
+
+.chip img {
+  float: left;
+  margin: 0 8px 0 -12px;
+  height: $chip-image-height;
+  width: 32 $chip-image-width;
+  border-radius: 50%;
+}
+
+.chip i.material-icons {
+  cursor: pointer;
+  float: right;
+  font-size: $chip-icon-font-size;
+  line-height: $chip-icon-height;
+  padding-left: 8px;
+}
+
+.chip.disabled img {
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+/**
+* Outlined Chips (MD2)
+**/
+.chip.outlined,
+.chip.outlined:hover,
+.chip.outlined:active,
+.chip.outlined:focus {
+  border: $chip-outlined-border;
+  background-color: $chip-outlined-bg-color;
+}
+
+/**
+* Letter Chips
+**/
+.letter {
+  float: left;
+  margin: 0 8px 0 -12px;
+  width: $chip-letter-width;
+  height: $chip-letter-height;
+  border-radius: 50%;
+  font-size: $chip-letter-font-size;
+  text-align: center;
+}
+
+.outlined.chip .letter {
+  width: $chip-outlined-letter-width;
+  height: $chip-outlined-letter-height;
+}

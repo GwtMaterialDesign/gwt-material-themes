@@ -28,7 +28,4 @@ public interface ThemeBrownDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/brown/css/materialize.brown.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/brown/css/overridecss.brown.css")
-    TextResource overrides();
 }

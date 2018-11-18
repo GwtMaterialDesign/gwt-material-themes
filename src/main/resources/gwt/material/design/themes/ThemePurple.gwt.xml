@@ -29,5 +29,4 @@
   <inherits name="gwt.material.design.themes.ThemePurpleResources"/>
 
   <stylesheet src="css/materialize.purple.min.css"/>
-  <stylesheet src="css/overridecss.purple.min.css"/>
 </module>

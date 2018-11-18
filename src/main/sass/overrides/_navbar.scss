@@ -1,0 +1,86 @@
+/**
+* NavBar
+**/
+nav button i {
+  line-height: inherit !important;
+}
+
+nav .nav-content {
+  position: relative;
+  line-height: normal;
+  width: 100%;
+  display: flex;
+}
+
+/**
+* NavBar tall
+**/
+nav .navbar-tall {
+  height: $navbar-tall-height;
+}
+
+nav .nav-wrapper .side-nav i {
+  display: inline !important;
+  vertical-align: middle;
+}
+
+/**
+* NavBar Shrink
+**/
+nav.navbar-shrink {
+  height: $navbar-shrink-height;
+  line-height: 64px;
+  top: 0;
+  left: 0;
+  background-color: $secondary-color;
+}
+
+nav .brand-logo img {
+  height: 100%;
+  padding: 12px;
+}
+
+nav.navbar-shrink,
+nav.navbar-shrink .brand-logo {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav.navbar-shrink .brand-logo {
+  line-height: 264px;
+  height: 200px;
+}
+
+nav.smaller {
+  height: 64px;
+}
+
+nav.smaller .brand-logo img {
+  width: auto;
+}
+
+nav.smaller .brand-logo {
+  line-height: 64px;
+  height: 64px;
+  font-size: 2.1rem;
+}
+
+nav .nav-wrapper .collapsible-body {
+  padding: 0 !important;
+}
+
+/**
+* NavBar Fixed
+**/
+nav.pinned {
+  z-index: 996;
+}
+
+
+.navmenu-permanent,
+.drag-target {
+  visibility: hidden !important;
+}

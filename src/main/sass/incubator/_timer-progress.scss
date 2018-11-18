@@ -1,0 +1,11 @@
+.timer-progress .fill {
+  background: $timer-progress-bg-color;
+  -webkit-animation: $timer-progress-initial-duration fullw infinite;
+  animation: $timer-progress-initial-duration fullw infinite
+}
+
+.timer-progress.bouncing .fill {
+  background: $timer-progress-bg-color;
+  -webkit-animation: $timer-progress-bouncing-duration cubic-bezier(.08, -.18, .91, 1.14) barbounce alternate infinite;
+  animation: $timer-progress-bouncing-duration cubic-bezier(.08, -.18, .91, 1.14) barbounce alternate infinite
+}

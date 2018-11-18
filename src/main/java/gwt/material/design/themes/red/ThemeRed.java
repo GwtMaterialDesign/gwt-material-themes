@@ -28,7 +28,4 @@ public interface ThemeRed extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/red/css/materialize.red.min.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/red/css/overridecss.red.min.css")
-    TextResource overrides();
 }
