@@ -8571,21 +8571,66 @@ nav ul li a {
   float: left; }
 
 /**
-* Async Switch
+* Async Switch and CheckBox
 */
-.switch {
+.async.gwt-CheckBox,
+.async.switch {
   position: relative;
-  display: inline-block; }
+  display: inline-block !important; }
 
-.switch .loader-wrapper {
+.async.gwt-CheckBox .loader-wrapper,
+.async.switch .loader-wrapper {
   position: absolute;
-  background: transparent;
-  margin-top: -8px; }
+  background: transparent; }
 
-.switch .loader-wrapper.active {
+.async.gwt-CheckBox .preloader-wrapper.active,
+.async.switch .preloader-wrapper.active {
   margin: auto;
   width: 28px;
   height: 28px; }
+
+.async.gwt-CheckBox .preloader-wrapper.active {
+  position: absolute;
+  left: -4px;
+  top: -2px; }
+
+.async.gwt-CheckBox.loading label:before, .async.gwt-CheckBox.loading label:after {
+  visibility: hidden; }
+
+/**
+* Async Button
+*/
+button.async.loading i {
+  -webkit-animation: spin 400ms linear infinite;
+  -moz-animation: spin 400ms linear infinite;
+  animation: spin 400ms linear infinite; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/**
+* Async ListBox
+**/
+.async.listbox-wrapper .progress-wrapper {
+  top: unset;
+  bottom: -4px; }
+
+/**
+* Async Collapsible
+**/
+ul.collapsible li.async .valign-wrapper {
+  top: unset;
+  bottom: 0px; }
 
 /* ==========================================================================
    OVERRIDE CSS STYLES
@@ -9831,6 +9876,34 @@ ul.side-nav.mini-with-expand li a span {
 **/
 #sidenav-overlay {
   visibility: hidden; }
+
+/**
+* SideNav - Compact Density
+**/
+.compact.side-nav a {
+  height: 32px;
+  line-height: 32px; }
+
+.compact.side-nav li {
+  line-height: 32px; }
+
+.compact.side-nav i {
+  font-size: 1.4em !important;
+  margin-left: 4px !important; }
+
+/**
+* SideNav - Comfortable Density
+**/
+.comfortable.side-nav a {
+  height: 40px;
+  line-height: 40px; }
+
+.comfortable.side-nav li {
+  line-height: 40px; }
+
+.comfortable.side-nav i {
+  font-size: 1.6em !important;
+  margin-left: 4px !important; }
 
 /** SplashScreen */
 .splash-screen {
