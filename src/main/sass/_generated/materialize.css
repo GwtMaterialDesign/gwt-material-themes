@@ -1,4 +1,4 @@
-.materialize-red.lighten-5 {
+.input-field.hoverable-status input.invalid.materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
 .materialize-red-text.text-lighten-5 {
@@ -6054,8 +6054,7 @@ button.btn-floating {
     .fixed-action-btn.horizontal ul {
       text-align: right;
       right: 64px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: -6px;
       height: 100%;
       left: initial;
       width: 500px;
@@ -9579,7 +9578,6 @@ ul.dropdown-content {
 .fixed-action-btn.horizontal ul {
   text-align: right;
   right: 54px;
-  transform: translateY(106%);
   height: 100%;
   left: initial;
   width: 500px; }
