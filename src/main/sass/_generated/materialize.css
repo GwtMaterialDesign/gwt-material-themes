@@ -1,4 +1,4 @@
-.input-field.hoverable-status input.invalid.materialize-red.lighten-5 {
+.materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
 .materialize-red-text.text-lighten-5 {
@@ -6054,7 +6054,8 @@ button.btn-floating {
     .fixed-action-btn.horizontal ul {
       text-align: right;
       right: 64px;
-      top: -6px;
+      top: 50%;
+      transform: translateY(-50%);
       height: 100%;
       left: initial;
       width: 500px;
@@ -8771,6 +8772,9 @@ button.btn-ghost:hover, button.btn-ghost:active {
 .card .card-action a {
   display: inline-block; }
 
+.card .card-content .card-title {
+  margin-top: 12px; }
+
 /**
 * Cards - Horizontal
 **/
@@ -9549,7 +9553,8 @@ ul.dropdown-content {
 .input-field.hoverable-status.disabled .status-icon {
   display: none; }
 
-.input-field.hoverable-status input {
+.input-field.hoverable-status input.invalid,
+.input-field.hoverable-status input.valid {
   padding-right: 40px;
   box-sizing: border-box; }
 
@@ -9579,6 +9584,7 @@ ul.dropdown-content {
   text-align: right;
   right: 54px;
   height: 100%;
+  top: -6px;
   left: initial;
   width: 500px; }
 
