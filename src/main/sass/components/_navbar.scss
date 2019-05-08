@@ -165,6 +165,10 @@ nav {
     height: $navbar-height;
     line-height: $navbar-height;
   }
+  ul.side-nav.mini-with-expand {
+    top: 64px !important;
+    height: calc(100vh - 64px) !important;
+  }
   .navbar-fixed {
     height: $navbar-height;
   }

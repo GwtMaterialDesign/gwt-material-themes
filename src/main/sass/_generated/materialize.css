@@ -5573,6 +5573,9 @@ nav {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 64px;
     line-height: 64px; }
+  ul.side-nav.mini-with-expand {
+    top: 64px !important;
+    height: calc(100vh - 64px) !important;}
   .navbar-fixed {
     height: 64px; } }
 
