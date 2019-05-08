@@ -8709,7 +8709,7 @@ button.btn-ghost:hover, button.btn-ghost:active {
 .card .card-action a {
   display: inline-block; }
 
-.card .card-content .card-title {
+.card .card-content .card-title i {
   margin-top: 12px;}
 
 /**

@@ -11573,7 +11573,7 @@ button.btn-ghost:hover, button.btn-ghost:active {
     display: inline-block;
 }
 
-.card .card-content .card-title {
+.card .card-content .card-title i {
     margin-top: 12px;}
 
 /**
