@@ -1,0 +1,10 @@
+/**
+* Stepper
+**/
+.stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
+  color: $stepper-active-color !important;
+}
+
+.stepper .step > div:first-child .circle {
+  background: $stepper-active-color !important;
+}

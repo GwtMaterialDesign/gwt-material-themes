@@ -28,7 +28,4 @@ public interface ThemeGreyDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/grey/css/materialize.grey.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/grey/css/overridecss.grey.css")
-    TextResource overrides();
 }

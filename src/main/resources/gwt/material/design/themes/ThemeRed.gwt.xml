@@ -29,5 +29,4 @@
   <inherits name="gwt.material.design.themes.ThemeRedResources"/>
 
   <stylesheet src="css/materialize.red.min.css"/>
-  <stylesheet src="css/overridecss.red.min.css"/>
 </module>

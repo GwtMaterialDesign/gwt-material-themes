@@ -29,5 +29,4 @@
   <inherits name="gwt.material.design.themes.ThemeGreyResources"/>
 
   <stylesheet src="css/materialize.grey.min.css"/>
-  <stylesheet src="css/overridecss.grey.min.css"/>
 </module>

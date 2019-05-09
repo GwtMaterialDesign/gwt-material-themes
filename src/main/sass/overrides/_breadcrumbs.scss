@@ -1,0 +1,15 @@
+/**
+* Breadcrumbs
+**/
+.breadcrumb i {
+  float: none !important;
+  margin-right: 15px;
+}
+
+.breadcrumb span {
+  vertical-align: top;
+}
+
+.breadcrumb:nth-child(2):before {
+  display: none;
+}

@@ -28,7 +28,4 @@ public interface ThemeBlueDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/blue/css/materialize.blue.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/blue/css/overridecss.blue.css")
-    TextResource overrides();
 }

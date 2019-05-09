@@ -1,0 +1,35 @@
+/**
+* Tabs
+**/
+
+ul.tabs {
+  overflow: hidden !important;
+}
+
+ul.tabs .tab a i {
+  margin-top: 12px;
+  padding-left: 36%;
+}
+
+ul.tabs .tab a span:nth-child(2) {
+  float: left;
+}
+
+ul.tabs .tab.disabled {
+  opacity: 0.5;
+}
+
+ul.tabs .tab a i,
+.tabs .tab a span {
+  float: none !important;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.tabs .tab a i {
+  padding-left: 0;
+}
+
+.tabs {
+  background: $tabs-wrapper-bg-color;
+}

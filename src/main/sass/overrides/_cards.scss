@@ -1,0 +1,42 @@
+/**
+* Cards
+**/
+.card .card-action a {
+  display: inline-block;
+}
+
+.card .card-content .card-title i {
+  margin-top: 12px;
+}
+
+/**
+* Cards - Horizontal
+**/
+.landscape .card-action a {
+  margin-left: 20px;
+  margin-right: 0 !important;
+}
+
+.landscape .card-action {
+  padding: 0;
+  margin-top: 8px;
+}
+
+.landscape .card-content {
+  width: $landscape-card-content-width !important;
+  float: left;
+}
+
+.landscape .card-image {
+  width: $landscape-card-image-width !important;
+  float: left;
+}
+
+.landscape .card-image img,
+.horizontal.card {
+  height: $landscape-card-height;
+}
+
+.landscape .card-image {
+  padding: 0;
+}

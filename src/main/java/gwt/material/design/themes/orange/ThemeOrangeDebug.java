@@ -28,7 +28,4 @@ public interface ThemeOrangeDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/orange/css/materialize.orange.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/orange/css/overridecss.orange.css")
-    TextResource overrides();
 }

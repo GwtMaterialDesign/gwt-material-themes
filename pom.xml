@@ -3,13 +3,13 @@
   <parent>
     <artifactId>gwt-material-parent</artifactId>
     <groupId>com.github.gwtmaterialdesign</groupId>
-    <version>2.1.1</version>
+    <version>2.2-rc1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>gwt-material-themes</artifactId>
   <packaging>gwt-lib</packaging>
-  <version>2.1.1</version>
+  <version>2.2-rc1</version>
 
   <name>Gwt Material Themes</name>
   <description>Themes for gwt-material</description>
@@ -18,13 +18,15 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
+    <sass.source>${basedir}/src/main/sass</sass.source>
+    <sass.target>${basedir}/src/main/sass/_generated</sass.target>
   </properties>
 
   <scm>
     <connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
     <developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
     <url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
-    <tag>v2.1.1-SNAPSHOT</tag>
+    <tag>v2.2-rc1</tag>
 
   </scm>
 
@@ -136,4 +138,74 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>generateTheme</id>
+
+      <dependencies>
+        <dependency>
+          <groupId>com.samaxes.maven</groupId>
+          <artifactId>minify-maven-plugin</artifactId>
+          <version>1.7.4</version>
+        </dependency>
+      </dependencies>
+      <build>
+        <plugins>
+
+          <!-- SASS Compiler -->
+          <plugin>
+            <groupId>com.github.warmuuh</groupId>
+            <artifactId>libsass-maven-plugin</artifactId>
+            <version>0.2.10-libsass_3.5.3</version>
+            <executions>
+              <execution>
+              <id>debug-css-resource</id>
+              <phase>package</phase>
+              <goals>
+                <goal>compile</goal>
+              </goals>
+              <configuration>
+                <inputPath>${sass.source}</inputPath>
+                <outputPath>${sass.target}</outputPath>
+                <generateSourceMap>false</generateSourceMap>
+              </configuration>
+            </execution>
+            </executions>
+          </plugin>
+
+          <!-- CSS Compressor -->
+          <plugin>
+            <groupId>com.samaxes.maven</groupId>
+            <artifactId>minify-maven-plugin</artifactId>
+            <version>1.7.4</version>
+            <executions>
+              <execution>
+                <id>default-minify</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>minify</goal>
+                </goals>
+                <configuration>
+
+                  <webappSourceDir>${basedir}/src/main/sass</webappSourceDir>
+                  <cssSourceDir>_generated</cssSourceDir>
+                  <cssSourceFiles>
+                    <cssSourceFile>materialize.css</cssSourceFile>
+                  </cssSourceFiles>
+                  <webappTargetDir>${basedir}/src/main/sass</webappTargetDir>
+                  <cssFinalFile>materialize.css</cssFinalFile>
+                  <skipMerge>true</skipMerge>
+                  <cssEngine>YUI</cssEngine>
+
+                  <jsEngine>CLOSURE</jsEngine>
+                  <closureCompilationLevel>SIMPLE_OPTIMIZATIONS</closureCompilationLevel>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

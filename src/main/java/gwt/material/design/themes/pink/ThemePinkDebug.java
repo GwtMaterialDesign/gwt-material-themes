@@ -28,7 +28,4 @@ public interface ThemePinkDebug extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/pink/css/materialize.pink.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/pink/css/overridecss.pink.css")
-    TextResource overrides();
 }

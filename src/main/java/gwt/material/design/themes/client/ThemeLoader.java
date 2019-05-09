@@ -51,7 +51,6 @@ public class ThemeLoader {
 
     public interface ThemeBundle extends ClientBundle {
         TextResource style();
-        TextResource overrides();
     }
 
     private static List<Element> elements;
@@ -75,7 +74,6 @@ public class ThemeLoader {
 
                     // More resources might be loaded in the future.
                     elements.add(StyleInjector.injectStylesheet(bundle.style().getText()));
-                    elements.add(StyleInjector.injectStylesheet(bundle.overrides().getText()));
                 }
 
                 if(callback != null) {

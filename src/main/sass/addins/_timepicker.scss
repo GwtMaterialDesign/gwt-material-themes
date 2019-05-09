@@ -1,0 +1,43 @@
+/**
+* Time Picker
+**/
+.lolliclock-header {
+  background: $time-picker-header-color !important;
+}
+
+.lolliclock-active-button-background {
+  background-color: $time-picker-button-color !important;
+}
+
+.lolliclock-button {
+  color: $time-picker-button-color !important;
+}
+
+.lolliclock-canvas-bg {
+  fill: lighten($time-picker-header-color, 25%) !important
+}
+
+.lolliclock-canvas-fg {
+  fill: $time-picker-header-color !important;
+}
+
+.lolliclock-canvas line {
+  stroke: lighten($time-picker-header-color, 50%) !important;
+}
+
+.lolliclock-tick.active, .lolliclock-tick:hover {
+  background-color: $time-picker-tick-color !important;
+}
+
+/** TimePicker - Outlined **/
+.input-field.outlined.timepicker input:focus,
+.input-field.outlined.timepicker input.valid{
+  border: 2px solid $time-picker-input-color;
+  box-shadow: none;
+}
+
+/** Time Picker Focus **/
+.input-field.timepicker input.valid {
+  border-bottom: 1px solid $time-picker-input-color;
+  box-shadow: 0 1px 0 0 $time-picker-input-color;
+}

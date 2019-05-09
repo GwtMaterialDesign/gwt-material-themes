@@ -1,0 +1,25 @@
+/**
+* ComboBox
+**/
+ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
+  border: 2px solid $combobox-border-color;
+  background-color: $combobox-border-color;
+}
+
+.input-field.outlined.combobox .select2-container--open .select2-selection {
+  border: 2px solid $combobox-border-color;
+  box-shadow: none;
+}
+
+/**
+* ComboBox Focus
+**/
+.input-field.combobox .select2-container--focus .select2-selection {
+  border-bottom: 1px solid $combobox-border-color;
+  box-shadow: 0 1px 0 0 $combobox-border-color;
+}
+
+.input-field.outlined.combobox .select2-container--focus .select2-selection {
+  border: 2px solid $combobox-border-color;
+  box-shadow: none;
+}

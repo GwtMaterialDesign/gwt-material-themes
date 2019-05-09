@@ -1,0 +1,120 @@
+/**
+* Error States
+**/
+.field-error,
+.field-error-picker input {
+  border-bottom: 1px solid $error-color !important;
+  box-shadow: 0 1px 0 0 $error-color !important;
+}
+
+.field-error-label,
+.field-success-label {
+  color: $error-color !important;
+  font-size: 12px;
+  opacity: 1 !important;
+}
+
+.field-success-label {
+  color: $success-color !important;
+}
+
+.field-helper-label {
+  color: #9E9E9E !important;
+  font-size: 12px;
+  opacity: 1 !important;
+}
+
+.field-success,
+.field-success-picker input {
+  border-bottom: 1px solid $success-color !important;
+  box-shadow: 0 1px 0 0 $success-color !important;
+}
+
+/**
+* Errors - Hoverable
+**/
+.input-field.hoverable-status .field-error-label,
+.input-field.hoverable-status .field-success-label {
+  position: absolute;
+  background: $error-color;
+  color: white !important;
+  min-height: 40px;
+  border-radius: 4px;
+  padding: 12px;
+  margin-right: 12px;
+  visibility: hidden;
+  font-size: 0.9em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  max-width: 400px;
+  display: inline;
+  min-width: 120px;
+  right: 0px;
+  top: 54px;
+}
+
+.input-field.hoverable-status .field-success-label {
+  background: $success-color;
+}
+
+/**
+* Arrow Default (LEFT Position)
+**/
+.input-field.hoverable-status .field-error-label::before,
+.input-field.hoverable-status .field-success-label::before {
+  content: "";
+  width: 10px;
+  height: 12px;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+  top: -12px;
+  position: absolute;
+  left: unset;
+  right: 12px
+}
+
+.input-field.hoverable-status .field-error-label.left:before {
+  border-bottom: solid 12px $error-color;
+}
+
+.input-field.hoverable-status .field-success-label.left:before {
+  border-bottom: solid 12px $success-color;
+}
+
+.input-field.hoverable-status .field-error-label.top:before,
+.input-field.hoverable-status .field-success-label.top:before {
+  left: unset;
+  right: 12px;
+  border-bottom: none;
+  bottom: -12px;
+  top: unset;
+}
+
+.input-field.hoverable-status .field-error-label.top:before {
+  border-top: solid 12px $error-color;
+}
+
+.input-field.hoverable-status .field-success-label.top:before {
+  border-top: solid 12px $success-color;
+}
+
+/**
+* Status Icon
+**/
+.input-field.hoverable-status i.status-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: $error-color;
+  z-index: 1;
+}
+
+.input-field.hoverable-status.disabled .status-icon {
+  display: none;
+}
+
+.input-field.hoverable-status input.invalid,
+.input-field.hoverable-status input.valid {
+  padding-right: 40px;
+  box-sizing: border-box;
+}

@@ -28,7 +28,4 @@ public interface ThemePink extends ThemeLoader.ThemeBundle {
 
     @Source("gwt/material/design/themes/pink/css/materialize.pink.min.css")
     TextResource style();
-
-    @Source("gwt/material/design/themes/pink/css/overridecss.pink.min.css")
-    TextResource overrides();
 }

@@ -1,0 +1,52 @@
+/** Global **/
+* html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat fixed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+* {
+  outline: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a:hover,
+a:visited {
+  color: none !important;
+  text-decoration: none !important;
+}
+
+a span {
+  vertical-align: middle;
+}
+
+div {
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-label {
+  display: block;
+}
+
+/*
+* IE Fixed for staircase issue
+* Read more under SECTION 2 : https://code.tutsplus.com/tutorials/9-most-common-ie-bugs-and-how-to-fix-them--net-7764
+*/
+nav ul li a {
+  float: left;
+}

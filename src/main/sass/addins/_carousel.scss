@@ -1,0 +1,10 @@
+/**
+* Carousel
+**/
+.slick-dots li {
+  background: $carousel-dots-color;
+}
+
+.slick-dots li.slick-active {
+  background: $carousel-dots-color-active;
+}
