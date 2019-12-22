@@ -12131,9 +12131,14 @@ input[type=range]::-ms-fill-lower {
     color: rgba(0, 0, 0, 0.87);
 }
 
+input[type=range] {
+    border: none;
+}
+
 .range-field .progress {
     background-color: #42A5F5;
     position: absolute;
+    top: 8px;
     z-index: 1;
     transition: none !important;
 }
@@ -12168,7 +12173,11 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .range-field .progress {
-    top: -8px;
+    background-color: #42a5f5;
+    position: absolute;
+    top: -7px;
+    z-index: 1;
+    transition: none!important;
 }
 
 /** Secondary Label **/
