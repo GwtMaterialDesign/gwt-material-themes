@@ -533,7 +533,7 @@ input[type=range] {
 input[type=range]::-webkit-slider-thumb {
   position: relative;
   z-index: 2;
-  transform: translateY(-8px);
+  transform: translateY(0px);
 }
 
 input[type=range]:hover::-webkit-slider-thumb {
@@ -550,6 +550,7 @@ input[type=range]:focus::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-runnable-track {
   background-color: transparent !important;
+  margin-top: -20px;
 }
 
 .range-field .progress-container {
