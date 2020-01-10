@@ -88,6 +88,11 @@ $progress-bar-bg-color: #EBEEF1;
 $navbar-tall-height: 128px;
 $navbar-shrink-height: 200px;
 
+// Ranges
+$range-field-progress-color: #e9e9e9;
+$range-field-progress-fill-color: $secondary-color;
+$range-field-progress-ring-color: rgba($secondary-color, 0.15);
+
 // SideNav
 $sidenav-brand-logo-border-bottom: 1px solid #e9e9e9;
 $sidenav-content-font-size: 1.6em;
