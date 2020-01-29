@@ -8805,6 +8805,9 @@ button.btn-ghost:hover, button.btn-ghost:active {
 /**
 * InputField - Outlined
 **/
+.input-field input {
+  pointer-events: none; }
+
 .input-field label {
   left: 0 !important; }
 
@@ -9252,6 +9255,7 @@ input[type=range]::-ms-fill-lower {
 
 input[type=range] {
   border: none;
+  color: transparent;
   margin: 0px !important; }
 
 input[type=range]::-webkit-slider-thumb {
@@ -9310,8 +9314,7 @@ input[type=range]::-ms-track {
   height: 32px;
   position: absolute;
   background: transparent;
-  border: transparent;
-  opacity: 0; }
+  border: transparent; }
 
 input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper {
@@ -9321,7 +9324,13 @@ input[type=range]::-ms-fill-upper {
 
 input[type=range]::-ms-thumb {
   transform: translateY(18px);
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
+
+input[type=range]:hover::-ms-thumb,
+input[type=range]:focus::-ms-thumb {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
 
 /**
 * Chips
