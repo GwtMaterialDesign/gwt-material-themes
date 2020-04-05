@@ -9395,6 +9395,15 @@ input[type=range]:focus::-ms-thumb {
   width: 30px;
   height: 30px; }
 
+/** Toggleable Chip **/
+.chip-container .chip {
+  cursor: pointer; }
+
+.chip.active {
+  color: #81C784;
+  background-color: rgba(129, 199, 132, 0.25);
+  font-weight: bold; }
+
 /**
 * Collapsible
 **/
@@ -10148,10 +10157,6 @@ i[class*="waves-"].material-icons {
     left: 60px;
     transform: translateX(0); }
   /** Search Bar **/
-  .input-field input[type=search] {
-    width: calc(100% - 10rem) !important;
-    margin-bottom: 0 !important;
-    padding-left: 0px !important; }
   .input-field input[type=search] + label {
     z-index: 998 !important; }
   .search-result {

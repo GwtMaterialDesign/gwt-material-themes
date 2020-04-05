@@ -42,12 +42,6 @@
   }
 
   /** Search Bar **/
-  .input-field input[type=search] {
-    width: calc(100% - 10rem) !important;
-    margin-bottom: 0 !important;
-    padding-left: 0px !important;
-  }
-
   .input-field input[type=search] + label {
     z-index: 998 !important;
   }
