@@ -290,6 +290,19 @@
 									<generateSourceMap>false</generateSourceMap>
 								</configuration>
 							</execution>
+							<!-- Custom Theme -->
+							<execution>
+								<id>custom-theme</id>
+								<phase>package</phase>
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<configuration>
+									<inputPath>${sass.source}/custom</inputPath>
+									<outputPath>${sass.target}/custom/css</outputPath>
+									<generateSourceMap>false</generateSourceMap>
+								</configuration>
+							</execution>
 						</executions>
 					</plugin>
 
