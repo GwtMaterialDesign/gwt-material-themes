@@ -25,6 +25,11 @@ body {
   height: 100%;
 }
 
+/** RLT Languages **/
+body[dir="rtl"] .row .col {
+  float: right;
+}
+
 a:hover,
 a:visited {
   color: none !important;

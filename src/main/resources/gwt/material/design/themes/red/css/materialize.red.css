@@ -8550,6 +8550,10 @@ body {
   width: 100%;
   height: 100%; }
 
+/** RLT Languages **/
+body[dir="rtl"] .row .col {
+  float: right; }
+
 a:hover,
 a:visited {
   color: none !important;
