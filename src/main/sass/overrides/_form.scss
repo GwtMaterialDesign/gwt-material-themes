@@ -532,6 +532,10 @@ input[type=range]::-ms-fill-lower {
   padding-top: 12px;
 }
 
+.no-thumb .range-field .thumb {
+  display: none;
+}
+
 input[type=range] {
   border: none;
   color: transparent;
