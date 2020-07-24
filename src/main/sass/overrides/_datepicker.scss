@@ -83,3 +83,7 @@
   border-bottom: 1px solid $datepicker-border-color;
   box-shadow: 0 1px 0 0 $datepicker-border-color;
 }
+
+.input-field input.picker__input:read-only {
+  pointer-events: initial;
+}

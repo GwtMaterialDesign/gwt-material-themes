@@ -62,3 +62,14 @@
   width: $chip-outlined-letter-width;
   height: $chip-outlined-letter-height;
 }
+
+/** Toggleable Chip **/
+.chip-container .chip {
+  cursor: pointer;
+}
+
+.chip.active {
+  color: $primary-color;
+  background-color: rgba($primary-color, 0.25);
+  font-weight: bold;
+}

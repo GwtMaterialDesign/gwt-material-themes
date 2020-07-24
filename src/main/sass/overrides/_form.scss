@@ -1,6 +1,9 @@
 /**
 * InputField - Outlined
 **/
+.input-field input:read-only {
+  pointer-events: none;
+}
 
 .input-field label {
   left: 0 !important;
@@ -306,6 +309,10 @@ input:-webkit-autofill {
 /**
 * ListBox
 **/
+.input-field.listbox-wrapper input:read-only {
+  pointer-events: initial;
+}
+
 .input-field .select-wrapper.gwt-ListBox + label.active {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -525,8 +532,13 @@ input[type=range]::-ms-fill-lower {
   padding-top: 12px;
 }
 
+.no-thumb .range-field .thumb {
+  display: none;
+}
+
 input[type=range] {
   border: none;
+  color: transparent;
   margin: 0px !important;
 }
 
@@ -598,7 +610,6 @@ input[type=range]::-ms-track {
   position: absolute;
   background: transparent;
   border: transparent;
-  opacity: 0;
 }
 input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper{
@@ -609,5 +620,12 @@ input[type=range]::-ms-fill-upper{
 
 input[type=range]::-ms-thumb {
   transform: translateY(18px);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+input[type=range]:hover::-ms-thumb,
+input[type=range]:focus::-ms-thumb {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }

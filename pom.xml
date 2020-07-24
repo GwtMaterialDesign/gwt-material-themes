@@ -4,13 +4,13 @@
 	<parent>
 		<artifactId>gwt-material-parent</artifactId>
 		<groupId>com.github.gwtmaterialdesign</groupId>
-		<version>2.3.0</version>
+		<version>2.4.0-rc1</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>gwt-material-themes</artifactId>
 	<packaging>gwt-lib</packaging>
-	<version>2.3.0</version>
+	<version>2.4.0-rc1</version>
 
 	<name>Gwt Material Themes</name>
 	<description>Themes for gwt-material</description>
@@ -27,7 +27,7 @@
 		<connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
 		<developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
 		<url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
-		<tag>v2.3.0</tag>
+		<tag>v2.4.0-rc1</tag>
 
 	</scm>
 
@@ -287,6 +287,19 @@
 								<configuration>
 									<inputPath>${sass.source}/yellow</inputPath>
 									<outputPath>${sass.target}/yellow/css</outputPath>
+									<generateSourceMap>false</generateSourceMap>
+								</configuration>
+							</execution>
+							<!-- Custom Theme -->
+							<execution>
+								<id>custom-theme</id>
+								<phase>package</phase>
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<configuration>
+									<inputPath>${sass.source}/custom</inputPath>
+									<outputPath>${sass.target}/custom/css</outputPath>
 									<generateSourceMap>false</generateSourceMap>
 								</configuration>
 							</execution>

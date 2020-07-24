@@ -2,33 +2,47 @@
 /**
 * Async Switch and CheckBox
 */
-.async.gwt-CheckBox,
+.async.checkbox,
 .async.switch {
   position: relative;
   display: inline-block !important;
 }
 
-.async.gwt-CheckBox .loader-wrapper,
-.async.switch .loader-wrapper {
+.checkbox .loader-wrapper,
+.switch .loader-wrapper {
   position: absolute;
-  background: transparent;
+  background: transparent !important;
+  width: 100px;
 }
 
-.async.gwt-CheckBox .preloader-wrapper.active,
-.async.switch .preloader-wrapper.active {
+.checkbox .preloader-wrapper.active,
+.switch .preloader-wrapper.active {
   margin: auto;
   width: 28px;
   height: 28px;
+  margin-top: -2px !important;
 }
 
-.async.gwt-CheckBox .preloader-wrapper.active {
+.checkbox .preloader-wrapper.active {
   position: absolute;
   left: -4px;
   top: -2px;
+  margin-top: -4px !important;
 }
 
-.async.gwt-CheckBox.loading label:before, .async.gwt-CheckBox.loading label:after {
+.checkbox.loading label:before, .checkbox.loading label:after {
   visibility: hidden;
+}
+
+.checkbox .loader-wrapper {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+}
+
+.checkbox.loading [type="checkbox"].filled-in + label:before,
+.checkbox.loading [type="checkbox"].filled-in + label:after {
+  display: none;
 }
 
 /**
