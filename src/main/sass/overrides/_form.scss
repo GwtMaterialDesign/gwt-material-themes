@@ -422,30 +422,6 @@ blockquote {
   opacity: 0 !important;
 }
 
-/** Checkbox Focusable */
-.checkbox:not(.checkbox-disabled):not(.filled-in) [type="checkbox"].filled-in + label:after {
-  transition: 200ms box-shadow;
-}
-
-.checkbox:not(.checkbox-disabled):focus [type="checkbox"].filled-in + label:after,
-.checkbox:not(.checkbox-disabled):hover [type="checkbox"].filled-in + label:after {
-  -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-/** Radio Button **/
-[type="radio"]:not(:checked) + label, [type="radio"]:checked + label,
-[type="checkbox"] + label {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-/** Radio Button Focusable **/
-.gwt-RadioButton:not(.gwt-RadioButton-disabled):focus label:before,
-.gwt-RadioButton:not(.gwt-RadioButton-disabled):hover label:before {
-  -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
 /**
 * ReadOnly States
 **/
@@ -530,20 +506,6 @@ blockquote {
   background-color: #D4D4D4;
 }
 
-/** Switch Focusable **/
-.switch:focus input[type=checkbox]:checked:not(:disabled) ~ .lever:after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(66, 165, 245, 0.1);
-}
-
-.switch:focus input[type=checkbox]:not(:disabled) ~ .lever:after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
-}
-
-/** Secondary Label **/
-.secondary-label {
-  color: rgba(0, 0, 0, 0.6)
-}
-
 /**
 * Range Slider
 * Fixed for IE issue with multiple indicator https://github.com/GwtMaterialDesign/gwt-material/issues/815
@@ -580,12 +542,6 @@ input[type=range]:hover::-webkit-slider-thumb {
   -webkit-box-shadow: 0px 0px 0px 8px $range-field-progress-ring-color;
   -moz-box-shadow: 0px 0px 0px 8px $range-field-progress-ring-color;
   box-shadow: 0px 0px 0px 8px $range-field-progress-ring-color;
-}
-
-input[type=range]:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0px 0px 0px 12px $range-field-progress-ring-color;
-  -moz-box-shadow: 0px 0px 0px 12px $range-field-progress-ring-color;
-  box-shadow: 0px 0px 0px 12px $range-field-progress-ring-color;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -625,13 +581,6 @@ input[type=range]:hover::-moz-range-thumb {
   box-shadow: 0px 0px 0px 8px rgba(66, 165, 245, 0.2);
 }
 
-input[type=range]:focus::-moz-range-thumb {
-  -webkit-box-shadow: 0px 0px 0px 12px rgba(66, 165, 245, 0.2);
-  -moz-box-shadow: 0px 0px 0px 12px rgba(66, 165, 245, 0.2);
-  box-shadow: 0px 0px 0px 12px rgba(66, 165, 245, 0.2);
-}
-
-
 /** Range IE Support **/
 input[type=range]::-ms-track {
   height:32px;
@@ -649,11 +598,4 @@ input[type=range]::-ms-fill-upper{
 input[type=range]::-ms-thumb {
   transform: translateY(18px);
   margin-bottom: 22px;
-}
-
-input[type=range]:hover::-ms-thumb,
-input[type=range]:focus::-ms-thumb {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
 }
