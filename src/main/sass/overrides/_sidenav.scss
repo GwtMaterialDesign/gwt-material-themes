@@ -52,6 +52,16 @@ ul.side-nav .collapsible-body li.active {
   background-color: $sidenav-collapsible-item-active-color !important;
 }
 
+.side-nav li:hover,
+.side-nav li.active {
+  background-color: rgba($primary-color, 0.1);
+}
+
+.side-nav li:hover a,
+.side-nav li.active a {
+  color: $primary-color;
+}
+
 ul.side-nav.right-aligned {
   left: auto !important;
 }
