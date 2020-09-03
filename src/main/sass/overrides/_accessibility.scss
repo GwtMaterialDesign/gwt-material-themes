@@ -7,6 +7,7 @@
 }
 
 /** Tabs & Buttons Focusable **/
+.button-collapse[tabindex],
 i[tabindex],
 button[tabindex],
 .tabs .tab a[tabindex] {
@@ -14,6 +15,7 @@ button[tabindex],
   position: relative;
 }
 
+.button-collapse[tabindex]:before,
 i[tabindex]:before,
 .tabs .tab a[tabindex]:before,
 button[tabindex]:before {
@@ -31,6 +33,7 @@ button[tabindex]:before {
   transition: 400ms;
 }
 
+.button-collapse.focus-visible:before,
 i.focus-visible:before,
 button.focus-visible:before,
 .tabs .tab a.focus-visible:before {
@@ -55,6 +58,7 @@ i.focus-visible:before {
   left: calc(50% - 16px);
 }
 
+.button-collapse.focus-visible:before,
 nav .nav-wrapper i.focus-visible:before {
   width: 40px;
   height: 40px;
