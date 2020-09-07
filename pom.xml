@@ -142,7 +142,7 @@
 
 	<profiles>
 		<profile>
-			<id>generateTheme</id>
+			<id>generate-all-themes</id>
 
 			<dependencies>
 				<dependency>
