@@ -1,0 +1,56 @@
+// Global
+$table-global-bg-color: #424242;
+$table-global-text-color: #ffffff;
+
+// Row
+$table-row-hover-bg-color: rgba(255, 255, 255, 0.2);
+$table-row-selected-bg-color: rgba(255, 255, 255, 0.04);
+$table-row-striped-bg-color: #4a4a4a;
+$table-tr-border-bottom: 1px solid #4a4a4a;
+
+// Row Expansion
+$table-row-expansion-bg-color: #4a4a4a;
+
+// Top Panel
+$table-top-panel-border-bottom: 2px solid #4a4a4a;
+
+// Thead
+$table-thead-text-color: rgba(255, 255, 255, 0.52);
+$table-thead-border-bottom: 1px solid rgb(74, 74, 74) !important;
+
+// Subheaders
+$table-subheader-bg-color: #424242;
+$table-subheader-text-color: #ffffff;
+$table-subheader-border: 1px solid #525252;
+
+// Frozen
+$table-frozen-column-bg-color: #4a4a4a;
+$table-frozen-column-selected-bg-color: #4f4f4f;
+$table-frozen-column-inner-shadow: inset 18px 0 20px -20px #272727;
+
+// Data Pager
+$table-pager-field-text-color: #ffffff;
+$table-pager-field-border: 1px solid #818181;
+$table-pager-action-text-color: rgba(255, 255, 255, 0.6);
+$table-pager-action-text-hover-color: rgb(255, 255, 255);
+$table-pager-action-disabled-bg-color: #424242;
+$table-pager-action-disabled-text-color: rgba(153, 153, 153, 0.2);
+
+// Responsive
+$table-responsive-bg-color: #292929;
+$table-responsive-row-color: #424242;
+$table-responsive-row-selected-bg-color: rgba(255, 255, 255, 0.04);
+$table-responsive-td-border-top: 1px solid #4a4a4a;
+$table-responsive-td-text-color: #ffffff;
+$table-responsive-td-before-text-color: rgba(255, 255, 255, 0.52);
+$table-responsive-row-expansion-bg-color: #292929;
+$table-responsive-selection-bg-color: #414141;
+
+// Focusable
+$table-focusable-row: rgba(255, 255, 255, .2);
+$table-focusable-thead-text-color: rgba(255, 255, 255, 0.87);
+
+// Content Placeholder
+$table-content-placeholder-webkit-gradient: -webkit-gradient(linear, left top, right top, color-stop(8%, #454545), color-stop(18%, #555555), color-stop(33%, #444444));
+$table-content-placeholder-webkit-linear-gradient: -webkit-linear-gradient(left, #454545 8%, #555555 18%, #444444 33%);
+$table-content-placeholder-linear-gradient: linear-gradient(to right, #454545 8%, #555555 18%, #444444 33%);
