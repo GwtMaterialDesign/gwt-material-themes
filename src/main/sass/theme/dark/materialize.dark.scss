@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
-// Colors
-@import "../../../components/color";
-
 // Variables;
-@import "../variables_dark";
+@import "variables_dark";
 
-/** Global **/
+/**
+ * Global
+ */
 body {
   background-color: $body-bg-color;
   color: $body-text-color;
@@ -16,7 +15,9 @@ a {
   color: $link-color
 }
 
-/** NavBar **/
+/**
+* NavBar
+**/
 nav .brand-logo,
 nav a.button-collapse,
 nav a.button-collapse i,
@@ -34,7 +35,9 @@ nav .nav-wrapper ul li:hover i {
   background-color: $navbar-icon-hover-color !important
 }
 
-/** Side Nav **/
+/**
+* Side Nav
+**/
 ul.side-nav {
   background-color: $sidenav-bg-color
 }
@@ -49,7 +52,7 @@ ul.side-nav li.active i,
 ul.side-nav li:hover i,
 ul.side-nav li.active a span,
 ul.side-nav li:hover a span {
-  color: $primary-color;
+  color: $accent-color;
 }
 
 ul.side-nav li.active,
@@ -61,13 +64,17 @@ ul.side-nav li:hover {
   background: $sidenav-item-focus;
 }
 
-/** Badge **/
+/**
+ * Badge
+ */
 span.badge {
   background-color: $badge-bg-color;
   color: $badge-text-color !important
 }
 
-/** Scroll bar **/
+/**
+ * Scroll bar
+ **/
 ::-webkit-scrollbar {
   background-color: $scrollbar-color !important;
   height: 2px !important;
@@ -83,7 +90,9 @@ span.badge {
   background-color: $scrollbar-track-color !important
 }
 
-/** Card **/
+/**
+ * Card
+ **/
 .card span.secondary-label,
 span.secondary-label {
   color: $card-secondary-text-color
@@ -117,190 +126,230 @@ span.secondary-label {
 }
 
 .card .collection .collection-item {
-  background-color:$card-collection-bg-color
+  background-color: $card-collection-bg-color
 }
 
 .card .collection .collection-item span {
   color: $card-collection-text-color
 }
 
-/** Button **/
-.btn, .btn-large, .btn-large:hover, .btn:hover, button:focus {
-  background-color: #bb86fc;
-  color: #000
+/**
+ * Button
+ **/
+.btn, .btn-large,
+.btn-large:hover,
+.btn:hover, button:focus {
+  background-color: $button-color;
+  color: $button-text-color
 }
 
-button.btn-outlined, button.btn-outlined:active, button.btn-outlined:focus, button.btn-outlined:hover {
-  background-color: transparent;
-  border: 1px solid #bb86fc;
-  color: #bb86fc
+button.btn-outlined,
+button.btn-outlined:active,
+button.btn-outlined:focus,
+button.btn-outlined:hover {
+  background-color: $button-outlined-bg-color;
+  border: $button-outlined-text-color;
+  color: $button-outlined-text-color
 }
 
 button.btn.btn-outlined.disabled {
-  color: rgba(187, 134, 252, .4) !important
+  color: $button-outlined-disabled-bg-color !important
 }
 
-.btn-floating.disabled, .btn-floating:disabled, .btn-large.disabled, .btn-large:disabled, .btn.disabled, .btn:disabled, .disabled.btn-large {
-  background-color: #bb86fc !important;
-  color: rgba(0, 0, 0, .7) !important;
-  opacity: .4
+.btn-floating.disabled,
+.btn-floating:disabled,
+.btn-large.disabled,
+.btn-large:disabled,
+.btn.disabled,
+.btn:disabled,
+.disabled.btn-large {
+  background-color: $button-disabled-bg-color !important;
+  color: $button-disabled-text-color !important;
+  opacity: $button-disabled-opacity
 }
 
 .btn-floating.disabled i {
-  color: rgba(0, 0, 0, .7) !important
+  color: $button-floating-icon-disabled-text-color !important
 }
 
 .btn-flat {
-  color: #bb86fc
+  color: $button-flat-color
 }
 
 .btn-flat.disabled {
-  color: rgba(187, 134, 252, .3) !important;
-  background-color: transparent !important
+  background-color: $button-flat-disabled-color !important;
+  color: $button-flat-disabled-text-color !important;
 }
 
-/** Checkbox **/
+/**
+ * Checkbox
+ **/
 [type=checkbox].filled-in:checked + label:after {
-  border: 2px solid #bb86fc;
-  background-color: #bb86fc
+  border: 2px solid $checkbox-color;
+  background-color: $checkbox-color
 }
 
 [type=checkbox].filled-in:checked + label:before {
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000
+  border-right: 2px solid $checkbox-border-color;
+  border-bottom: 2px solid $checkbox-border-color
 }
 
 [type=checkbox]:checked + label:before {
-  border-right: 2px solid #bb86fc;
-  border-bottom: 2px solid #bb86fc
+  border-right: 2px solid $checkbox-color;
+  border-bottom: 2px solid $checkbox-color
 }
 
 [type=checkbox]:indeterminate + label:before {
-  border-right: 2px solid #bb86fc
+  border-right: 2px solid $checkbox-color
 }
 
-/** CheckBox Focusable **/
+/**
+ * CheckBox Focusable
+ **/
 .checkbox.gwt-CheckBox:after {
-  background: rgba(255, 255, 255, 0.1);
+  background: $checkbox-focus-color;
 }
 
-/** Chip **/
+/**
+ * Chip
+ **/
 .chip {
   background-color: #2f2f2f;
   color: #fff
 }
 
 .chip.focus-visible {
-  color: #fff;
-  background-color: #232323;
+  background-color: $chip-bg-color;
+  color: $chip-text-color;
 }
 
 .chip.active {
-  color: #bb86fc;
-  background-color: rgba(187, 134, 252, .25)
+  background-color: $chip-active-bg-color;
+  color: $chip-active-text-color;
 }
 
 .chip .letter {
-  background-color: #424242
+  background-color: $chip-letter-color
 }
 
-.chip.outlined, .chip.outlined:active, .chip.outlined:focus, .chip.outlined:hover {
-  background-color: transparent;
-  border: 1px solid #4c4c4ce9
+.chip.outlined,
+.chip.outlined:active,
+.chip.outlined:focus,
+.chip.outlined:hover {
+  background-color: $chip-outlined-bg-color;
+  border: $chip-outlined-border
 }
 
-/** Collapsible **/
+/**
+ * Collapsible
+ **/
 .collapsible {
-  border-top: 1px solid #2f2f2f;
-  border-right: 1px solid #2f2f2f;
-  border-left: 1px solid #2f2f2f
+  border-top: 1px solid $collapsible-border-color;
+  border-right: 1px solid $collapsible-border-color;
+  border-left: 1px solid $collapsible-border-color
 }
 
 .collapsible-header {
-  background-color: #2f2f2f;
-  border-bottom: 1px solid #2f2f2f
+  background-color: $collapsible-header-color;
+  border-bottom: 1px solid $collapsible-border-color
 }
 
 .collapsible-header a {
-  color: #fff !important
+  color: $collapsible-header-text-color !important
 }
 
 .collapsible-body {
-  background-color: #353535;
-  border-bottom: 1px solid #2f2f2f
+  background-color: $collapsible-body-color;
+  border-bottom: 1px solid $collapsible-border-color
 }
 
-/** Collapsible Focusable **/
+/**
+ * Collapsible Focusable
+ **/
 .collapsible-header:hover,
 .collapsible-header.focus-visible {
-  background-color: #353535;
+  background-color: $collapsible-header-focusable-color
 }
 
-/** Collection **/
-.collection .collection-item, .collection.with-header .collection-header {
-  background-color: #2f2f2f;
-  border-bottom: 1px solid #353535
+/**
+ * Collection
+ **/
+.collection .collection-item,
+.collection.with-header .collection-header {
+  background-color: $collection-bg-color;
+  border-bottom: $collection-header-border
 }
 
 .collection {
-  border: 1px solid #2f2f2f
+  border: 1px solid $collection-bg-color
 }
 
 .collection .collection-item a {
-  color: #fff !important
+  color: $collection-text-color !important
 }
 
 .collection .collection-item.active {
-  background-color: #39353e;
-  color: #a87be0
+  background-color: $collection-active-bg-color;
+  color: $collection-active-text-color
 }
 
 
-/** Collection Focusable **/
+/**
+ * Collection Focusable
+ **/
 .collection-item.focus-visible {
-  background-color: #353535;
+  $collection-focusable-color: #353535;
 }
 
-/** Date Picker **/
+/**
+ * Date Picker
+ **/
 .picker__weekday-display {
-  background-color: #141414
+  background-color: $datepicker-weekday-bg
 }
 
 .picker__box {
-  background-color: #2e3033;
-  border: 1px solid #1e1f22;
-  border-top-color: #141414
+  background-color: $datepicker-pickerbox-bg;
+  border: $datepicker-pickerbox-border;
+  border-top-color: $datepicker-weekday-bg
 }
 
 .picker__date-display {
-  background-color: #1e1f22
+  background-color: $datepicker-date-bg
 }
 
 .picker__header {
-  color: rgba(255, 255, 255, .6)
+  color: $datepicker-header-text-color
 }
 
-.picker--focused .picker__day--selected, .picker--focused .picker__day--selected.picker__day--outfocus, .picker__day--selected, .picker__day--selected.picker__day--outfocus, .picker__day--selected:hover, .picker__day--selected:hover.picker__day--outfocus, .picker__day.picker__day--today.picker__day--selected {
-  background-color: #bb86fc;
+.picker--focused .picker__day--selected,
+.picker--focused .picker__day--selected.picker__day--outfocus,
+.picker__day--selected,
+.picker__day--selected.picker__day--outfocus,
+.picker__day--selected:hover,
+.picker__day--selected:hover.picker__day--outfocus,
+.picker__day.picker__day--today.picker__day--selected {
+  background-color: $accent-color;
   color: #000
 }
 
 .picker__day--infocus:hover:not(.picker__day--selected) {
-  color: rgba(166, 121, 222, .5)
+  color: rgba($accent-color, .5)
 }
 
 .picker__day.picker__day--today {
-  color: #b080ed
+  color: $accent-color
 }
 
-.picker__nav--next:hover, .picker__nav--prev:hover {
-  background-color: #2e3033
+.picker__nav--next:hover,
+.picker__nav--prev:hover {
+  background-color: $datepicker-pickerbox-bg
 }
 
 .picker__select--year.browser-default {
-  background: #2e3033;
+  background: $datepicker-pickerbox-bg;
   border: 1px solid #4f4f4f
 }
 
@@ -312,214 +361,252 @@ button.btn.btn-outlined.disabled {
   color: #848484
 }
 
-.picker--focused .picker__day--disabled, .picker__day--disabled, .picker__day--disabled:hover {
+.picker--focused .picker__day--disabled,
+.picker__day--disabled,
+.picker__day--disabled:hover {
   background: #434549;
-  border-color: #4c4c4d;
   color: #303030 !important;
   cursor: default;
   font-weight: 400;
   border: 1px solid transparent
 }
 
-/** Modal Dialog **/
-.modal, .modal .modal-footer {
-  background-color: #383838
+/**
+ * Modal Dialog
+ **/
+.modal,
+.modal .modal-footer {
+  background-color: $dialog-bg-color
 }
 
-/** Dropdown **/
+/**
+ * Dropdown
+ **/
 .dropdown-content {
-  background-color: #2f2f2f
+  background-color: $dropdown-bg-color
 }
 
-.dropdown-content a, .dropdown-content i, .dropdown-content span {
-  color: #fff !important
+.dropdown-content a,
+.dropdown-content i,
+.dropdown-content span {
+  color: $dropdown-text-color !important
 }
 
-.dropdown-content li.active, .dropdown-content li.selected, .dropdown-content li:hover {
-  background-color: #353535
+.dropdown-content li.active,
+.dropdown-content li.selected,
+.dropdown-content li:hover {
+  background-color: $dropdown-hover-bg-color
 }
 
 .separator {
-  border-color: #292929 !important
+  border-color: $dropdown-separator !important
 }
 
-/** Footer **/
+.dropdown-content li.active.selected {
+  background-color: $dropdown-active-bg-color
+}
+
+/**
+ * Footer
+ **/
 footer.page-footer {
-  background-color: #2f2f2f
+  background-color: $footer-bg-color
 }
 
 footer.page-footer .footer-copyright {
-  background-color: #272727
+  background-color: $footer-bg-color
 }
 
-/** Dropdown **/
-.dropdown-content li.active.selected {
-  background-color: #1e1e1e
+/**
+ * Selectbox
+ **/
+select {
+  background-color: $select-bg-color
 }
 
 .select-wrapper input.select-dropdown:disabled {
-  border-bottom: 1px dotted rgba(255, 255, 255, .3);
-  color: #fff
+  border-bottom: $select-disabled-border-bottom;
+  color: $select-disabled-text-color
 }
 
-/** Selectbox **/
-select {
-  background-color: #292929
-}
-
-/** Loader **/
+/**
+ * Loader
+ **/
 .loader-wrapper {
-  background-color: rgba(0, 0, 0, .701961)
+  background-color: $loader-wrapper-bg-color
 }
 
 .spinner-layer {
-  border-color: #bb86fc !important
+  border-color: $spinner-layer-border-color !important
 }
 
-/** Media Slider **/
+/**
+ * Media Slider
+ **/
 .slider .indicators .indicator-item.active {
-  background-color: #bb86fc
+  background-color: $slider-active-item-color
 }
 
 .slider .indicators .indicator-item {
-  background-color: #4e4e4e
+  background-color: $slider-item-color
 }
 
-/** Progress **/
+/**
+ * Progress
+ **/
 .progress {
-  background-color: #4c3f5b
+  background-color: $progress-bar-bg-color
 }
 
-.progress .determinate, .progress .indeterminate {
-  background-color: #bb86fc
+.progress .determinate,
+.progress .indeterminate {
+  background-color: $progress-bar-color
 }
 
-/** Radio **/
-[type=checkbox] + label, [type=radio]:checked + label, [type=radio]:not(:checked) + label {
-  color: rgba(255, 255, 255, .87) !important
+/**
+ * Radio
+ **/
+[type=checkbox] + label,
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  color: $radio-text-color !important
 }
 
-[type=radio].with-gap:checked + label:after, [type=radio]:checked + label:after {
-  border: 2px solid #bb86fc;
-  background-color: #bb86fc
+[type=radio].with-gap:checked + label:after,
+[type=radio]:checked + label:after {
+  border: 2px solid $radio-bg-color;
+  background-color: $radio-bg-color
 }
 
 [type=radio].with-gap:checked + label:before {
-  border: 2px solid #bb86fc
+  border: 2px solid $radio-bg-color
 }
 
 [type=radio]:disabled + label {
-  color: rgba(179, 179, 179, .26) !important
+  color: $radio-disabled-text-color !important
 }
 
 [type=radio]:disabled:not(:checked) + label:before {
-  border-color: rgba(150, 150, 150, .26)
+  border-color: $radio-disabled-bg-color
 }
 
-/** Radio Focusable **/
+/**
+ * Radio Focusable
+ **/
 .gwt-RadioButton:not(.gwt-RadioButton-disabled).focus-visible label:before,
 .gwt-RadioButton:not(.gwt-RadioButton-disabled):hover label:before {
-  -webkit-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: $radio-focusable-box-shadow;
+  box-shadow: $radio-focusable-box-shadow;
 }
 
-.gwt-RadioButton:not(.gwt-RadioButton-disabled).focus-visible label:before,
-.gwt-RadioButton:not(.gwt-RadioButton-disabled):hover label:before {
-  -webkit-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
+/**
+ * Search
+ **/
+.input-field input[type=search],
+.light.input-field.inline-search {
+  background-color: $input-search-bg-color
 }
 
-/** Search **/
-.input-field input[type=search], .light.input-field.inline-search {
-  background-color: #2f2f2f
+.input-field input[type=search]:focus,
+.light.input-field.inline-search input[type=search]:focus {
+  background-color: $input-search-focus-bg-color
 }
 
-.input-field input[type=search]:focus, .light.input-field.inline-search input[type=search]:focus {
-  background-color: #484848
+.input-field input[type=search],
+.input-field input[type=search]:focus,
+.input-field.inline-search input,
+.search-result a span {
+  color: $input-search-text-color
 }
 
-.input-field input[type=search], .input-field input[type=search]:focus, .input-field.inline-search input, .search-result a span {
-  color: #fff
-}
-
-.search-result a.higlighted, .search-result a:hover {
-  background-color: #353535
+.search-result a.higlighted,
+.search-result a:hover {
+  background-color: $input-search-highlight-color
 }
 
 .search-result {
   border-top: none;
-  background-color: #2f2f2f
+  background-color: $input-search-result-bg-color
 }
 
 .search-result a {
-  border-bottom: 1px solid #373737
+  border-bottom: $input-search-result-border-bottom
 }
 
-/** Range **/
+/**
+ * Range
+ **/
 input[type=range] {
   border: none
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background-color: #bb86fc
+  background-color: $range-thumb-color
 }
 
-input[type=range]::-webkit-slider-runnable-track, input[type=range].focus-visible::-webkit-slider-runnable-track {
-  background-color: #4c3f5b
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range].focus-visible::-webkit-slider-runnable-track {
+  background-color: $range-track-color
 }
 
 input[type=range] + .thumb {
-  background-color: #bb86fc
+  background-color: $range-thumb-color
 }
 
 input[type=range] + .thumb .value {
-  color: #000 !important
+  color: $range-text-color !important
 }
 
 .range-field .progress {
-  background-color: #bb86fc !important
+  background-color: $range-progress-color !important
 }
 
 input[type=range]:hover::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 8px rgba(187, 134, 252, .16) !important;
-  -moz-box-shadow: 0 0 0 8px rgba(187, 134, 252, .16) !important;
-  box-shadow: 0 0 0 8px rgba(187, 134, 252, .16) !important
+  -webkit-box-shadow: 0 0 0 8px $range-box-shadow-color !important;
+  -moz-box-shadow: 0 0 0 8px $range-box-shadow-color !important;
+  box-shadow: 0 0 0 8px $range-box-shadow-color !important
 }
 
 input[type=range].focus-visible::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 12px rgba(187, 134, 252, .16) !important;
-  -moz-box-shadow: 0 0 0 12px rgba(187, 134, 252, .16) !important;
-  box-shadow: 0 0 0 12px rgba(187, 134, 252, .16) !important
+  -webkit-box-shadow: 0 0 0 12px $range-box-shadow-color !important;
+  -moz-box-shadow: 0 0 0 12px $range-box-shadow-color !important;
+  box-shadow: 0 0 0 12px $range-box-shadow-color !important
 }
 
-/** Switch **/
+/**
+ * Switch
+ **/
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #604c79
+  background-color: $switch-checked-lever-bg
 }
 
 input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(187, 134, 252, .1)
+  box-shadow: $switch-box-shadow
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #bb86fc
+  background-color: $switch-bg-color
 }
 
 .switch.disabled {
-  opacity: .4
+  opacity: $switch-disabled-opacity
 }
 
-/** Switch Focusable **/
+/**
+ * Switch Focusable
+ **/
 .switch.focus-visible input[type=checkbox]:checked:not(:disabled) ~ .lever:after,
 .switch:hover input[type=checkbox]:checked:not(:disabled) ~ .lever:after {
-  box-shadow: 0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba(96, 76, 121, 0.1);
+  box-shadow: $switch-focusable-box-shadow-on;
 }
 
 .switch.focus-visible input[type=checkbox]:not(:disabled) ~ .lever:after {
-  box-shadow: 0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba(255, 255, 255, 0.08);
+  box-shadow: $switch-focusable-box-shadow-off;
 }
 
-/** Tabs **/
+/**
+ * Tabs
+ **/
 .tabs {
   background-color: #272727
 }
@@ -532,33 +619,39 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
   background-color: #bb86fc
 }
 
+/**
+ * Toast
+ **/
 .toast {
-  background-color: #e4e4e4;
-  color: #000
+  background-color: $toast-bg-color;
+  color: $toast-text-color
 }
 
-/** Toast **/
 .toast a {
-  color: #bb86fc
+  color: $link-color
 }
 
-/** Tooltip **/
+/**
+ * Tooltip
+ **/
 .material-tooltip {
-  color: #212121;
-  background-color: #aaa !important
+  background-color: $tooltip-bg-color !important;
+  color: $tooltip-text-color;
 }
 
 .material-tooltip .backdrop {
-  background-color: #aaa
+  background-color: $tooltip-bg-color
 }
 
-/** Table of Contents **/
+/**
+ * Table of Contents
+ **/
 .table-of-contents a.active {
-  border-left: 2px solid #bb86fc !important
+  border-left: 2px solid $table-of-contents-color !important
 }
 
 .table-of-contents a:hover {
-  border-left: 1px solid #bb86fc !important
+  border-left: 1px solid $table-of-contents-color !important
 }
 
 .table-of-contents a {
@@ -569,14 +662,16 @@ input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
   color: #fff
 }
 
-/** Input Fields (Global) **/
+/**
+ * Input Fields (Global)
+ **/
 .picker__input.picker__input--active, input:not([type]):focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=search]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=url]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #bb86fc;
-  box-shadow: 0 1px 0 0 #bb86fc
+  border-bottom: 1px solid $input-field-color;
+  box-shadow: 0 1px 0 0 $input-field-color
 }
 
 input:not([type]):focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #bb86fc
+  color: $input-field-color
 }
 
 .input-field .prefix {
@@ -593,7 +688,7 @@ input:not([type]):disabled, input:not([type])[readonly=readonly], input[type=dat
 }
 
 .input-field.outlined input.picker__input--active, .input-field.outlined input:focus, .input-field.outlined textarea:focus {
-  border: 2px solid #bb86fc;
+  border: 2px solid $input-field-color;
   box-shadow: none
 }
 
@@ -631,14 +726,16 @@ input:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hov
 }
 
 blockquote {
-  border-left: 5px solid #bb86fc !important
+  border-left: 5px solid $input-field-color !important
 }
 
 pre {
   background: #323232 !important
 }
 
-/** Autocomplete **/
+/**
+ * Autocomplete
+ **/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -654,7 +751,9 @@ textarea:-webkit-autofill:focus {
   background-color: #353535;
 }
 
-/** Pre **/
+/**
+ * Pre
+ **/
 pre.hljs {
   border: 1px solid #1e1e1e !important;
   background-color: #1e1e1e !important

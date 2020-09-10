@@ -1,195 +1,186 @@
-/*** Colors ***/
-$primary-color: color("deep-purple", "accent-1") !default;
-$primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 15%) !default;
+// Colors
+$accent-color: #bb86fc !default;
+$link-color: $accent-color;
 
-$secondary-color: lighten($primary-color, 15%) !default;
-$success-color: color("green", "base") !default;
-$error-color: color("red", "base") !default;
-$link-color: $primary-color !default;
-
-/** Body **/
+// Body
 $body-bg-color: #292929;
 $body-text-color: #ffffff;
 
-/** NavBar **/
+// NavBar
 $navbar-bg-color: #272727;
 $navbar-text-color: #ffffff;
 $navbar-icon-hover-color: #1e1e1e;
 
-/** SideNav **/
+// SideNav
 $sidenav-bg-color: #2e2e2e;
 $sidenav-text-color: rgba(255, 255, 255, .9);
-$sidenav-item-hover: rgba(187, 134, 252, .08);
+$sidenav-item-hover: rgba($accent-color, 0.1);
 $sidenav-item-focus: #272727;
 
-/** Badges **/
-$badge-bg-color: $secondary-color !default;
+// Badges
+$badge-bg-color: $accent-color !default;
 $badge-text-color: #000000;
 
-/** Scroll Bar **/
+// Scroll Bar
 $scrollbar-color: #1e1e1e;
 $scrollbar-thumb-color: #464646;
 $scrollbar-track-color: #2e2e2e;
 
-/** Card **/
+// Card
 $card-bg-color: #1e1e1e;
 $card-text-color: #ffffff;
 $card-secondary-text-color: rgba(255, 255, 255, .6);
 $card-icon-color: #ffffff;
-$card-link-color: $primary-color;
-$card-collection-bg-color:  #2b2b2b;
+$card-link-color: $accent-color;
+$card-collection-bg-color: #2b2b2b;
 $card-collection-text-color: #ffffff;
 
+// Buttons
+$button-color: $accent-color;
+$button-text-color: #000000;
+$button-outlined-bg-color: transparent;
+$button-outlined-text-color: $accent-color;
+$button-outlined-border: 1px solid $accent-color;
+$button-outlined-disabled-bg-color: rgba($accent-color, 0.4);
+$button-disabled-bg-color: $accent-color;
+$button-disabled-text-color: rgba(0, 0, 0, .7);
+$button-disabled-opacity: 0.4;
+$button-floating-icon-disabled-text-color: rgba(0, 0, 0, .7);
+$button-flat-color: $accent-color;
+$button-flat-disabled-color: transparent;
+$button-flat-disabled-text-color: rgba($accent-color, 0.3);
 
+// CheckBox
+$checkbox-color: $accent-color;
+$checkbox-border-color: #000000;
+$checkbox-focus-color: rgba(255, 255, 255, 0.1);
 
+// Chip
+$chip-bg-color: #232323;
+$chip-text-color: #ffffff;
+$chip-letter-color: #424242;
+$chip-active-bg-color: rgba($accent-color, 0.25);
+$chip-active-text-color: $accent-color;
+$chip-outlined-bg-color: transparent;
+$chip-outlined-border: 1px solid #4c4c4ce9;
 
+// Collapsible
+$collapsible-header-color: #2f2f2f;
+$collapsible-header-focusable-color: #353535;
+$collapsible-header-text-color: #ffffff;
+$collapsible-border-color: #2f2f2f;
+$collapsible-body-color: #353535;
 
-/*** Buttons ***/
-$button-bg-color-disabled: #DFDFDF !default;
-$button-color: $secondary-color !default;
-$button-color-disabled: #9F9F9F !default;
-$button-color-flat: #343434 !default;
-$button-color-raised: #fff !default;
-$button-floating-size: 37px !default;
-$button-height: 36px !default;
-$button-font-size-shared: 1.3rem !default;
-$button-large-icon-font-size: 1.6rem !default;
-$button-line-height: 36px !default;
+// Collection
+$collection-bg-color: #2f2f2f;
+$collection-active-bg-color: rgba($accent-color, 0.1);
+$collection-active-text-color: $accent-color;
+$collection-text-color: #ffffff;
+$collection-header-border: 1px solid #353535;
+$collection-focusable-color: #353535;
 
-/*** Cards ***/
-$card-padding: 20px !default;
-$card-bg-color: #fff !default;
-$card-link-color: color("orange", "accent-2") !default;
-$card-link-color-light: lighten($card-link-color, 20%) !default;
+// DatePicker
+$datepicker-weekday-bg: #141414;
+$datepicker-pickerbox-bg: #2e3033;
+$datepicker-pickerbox-border: 1px solid #1e1f22;
+$datepicker-date-bg: #1e1f22;
+$datepicker-header-text-color: rgba(255, 255, 255, .6);
 
-/*** Collapsible ***/
-$collapsible-height: 3rem !default;
-$collapsible-header-color: #fff !default;
-$collapsible-border-color: #ddd !default;
+// Dialog
+$dialog-bg-color: #383838;
 
-/*** Chips ***/
-$chip-bg-color: #e4e4e4 !default;
-
-/*** Date Picker ***/
-$datepicker-weekday-bg: darken($secondary_color, 7%) !default;
-$datepicker-date-bg: $secondary_color !default;
-$datepicker-year: rgba(255, 255, 255, .4) !default;
-$datepicker-focus: rgba(0, 0, 0, .05) !default;
-$datepicker-selected: $secondary-color !default;
-$datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !default;
-
-/*** Dropdown ***/
-$dropdown-bg-color: #fff !default;
-$dropdown-hover-bg-color: #eee !default;
-$dropdown-color: $secondary-color !default;
-$dropdown-item-height: 50px !default;
-
-/*** Fonts ***/
-$roboto-font-path: "../font/roboto/" !default;
-$icons-font-path: "../font/material-design-icons/" !default;
-
-/*** Forms ***/
-// Text Inputs + Textarea
-$input-border-color: color("grey", "base") !default;
-$input-bg-color: #fff !default;
-$input-error-color: $error-color !default;
-$input-success-color: $success-color !default;
-$input-focus-color: $secondary-color !default;
-$label-font-size: .8rem !default;
-$input-disabled-color: rgba(0, 0, 0, .26) !default;
-$input-disabled-solid-color: #BDBDBD !default;
-
-// Radio Buttons
-$radio-fill-color: $secondary-color !default;
-$radio-empty-color: #5a5a5a !default;
-
-// Switches
-$switch-bg-color: $secondary-color !default;
-$switch-checked-lever-bg: desaturate(lighten($secondary-color, 25%), 25%) !default;
-$switch-unchecked-bg: #F1F1F1 !default;
-$switch-unchecked-lever-bg: #818181 !default;
-
-
-/*** Global ***/
-// Media Query Ranges
-$small-screen-up: 601px !default;
-$medium-screen-up: 993px !default;
-$large-screen-up: 1201px !default;
-$small-screen: 600px !default;
-$medium-screen: 992px !default;
-$large-screen: 1200px !default;
-
-$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
-$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
-$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
-$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
-$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
-
-// Grid Variables
-$num-cols: 12 !default;
-$gutter-width: 1.5rem !default;
-$element-top-margin: $gutter-width/3 !default;
-$element-bottom-margin: ($gutter-width*2)/3 !default;
-
-/*** Navbar ***/
-$navbar-height: 64px !default;
-$navbar-height-mobile: 56px !default;
-$navbar-font-color: #fff !default;
-$navbar-brand-font-size: 2.1rem !default;
-
-/*** SideNav ***/
-$sidenav-bg-color: #fff !default;
-$sidenav-padding-right: 15px !default;
-$sidenav-item-height: 64px !default;
-
-/*** Photo Slider ***/
-$slider-bg-color: color('grey', 'base') !default;
-$slider-bg-color-light: color('grey', 'lighten-2') !default;
-$slider-indicator-color: color('green', 'base') !default;
-
-/*** Spinners | Loaders ***/
-$spinner-default-color: $secondary-color !default;
-
-/*** Tabs ***/
-$tabs-underline-color: $primary-color-light !default;
-$tabs-text-color: $primary-color !default;
-$tabs-bg-color: #fff !default;
-
-/*** Tables ***/
-$table-border-color: #d0d0d0 !default;
-$table-striped-color: #f2f2f2 !default;
-
-/*** Toasts ***/
-$toast-height: 48px !default;
-$toast-color: #323232 !default;
-$toast-text-color: #fff !default;
-
-/*** Typography ***/
-$off-black: rgba(0, 0, 0, 0.87) !default;
-// Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
-$h6-fontsize: 1rem !default;
+// Dropdown
+$dropdown-bg-color: #2f2f2f;
+$dropdown-text-color: #ffffff;
+$dropdown-hover-bg-color: #353535;
+$dropdown-separator: #292929;
+$dropdown-active-bg-color: #1e1e1e;
 
 // Footer
-$footer-bg-color: $primary-color !default;
+$footer-bg-color: #2f2f2f;
 
-// Flowtext
-$range: $large-screen - $small-screen !default;
-$intervals: 20 !default;
-$interval-size: $range / $intervals !default;
+// Select
+$select-bg-color: #292929;
+$select-disabled-border-bottom: 1px dotted rgba(255, 255, 255, .3);
+$select-disabled-text-color: #fff;
 
-/*** Collections ***/
-$collection-border-color: #e0e0e0 !default;
-$collection-bg-color: #fff !default;
-$collection-active-bg-color: $secondary-color !default;
-$collection-active-color: lighten($secondary-color, 55%) !default;
-$collection-hover-bg-color: #ddd !default;
-$collection-link-color: $secondary-color !default;
+// Loader
+$loader-wrapper-bg-color: rgba(0, 0, 0, .701961);
+$spinner-layer-border-color: $accent-color;
 
-/* Progress Bar */
-$progress-bar-color: $secondary-color !default;
+// Media Slider
+$slider-item-color: #4e4e4e;
+$slider-active-item-color: $accent-color;
+
+// Progress
+$progress-bar-bg-color: rgba($accent-color, 0.3);
+$progress-bar-color: $accent-color;
+
+// Radio
+$radio-text-color: rgba(255, 255, 255, .87);
+$radio-bg-color: $accent-color;
+$radio-disabled-text-color: rgba(179, 179, 179, .26);
+$radio-disabled-bg-color: rgba(150, 150, 150, .26);
+$radio-focusable-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
+
+// Search
+$input-search-bg-color: #2f2f2f;
+$input-search-text-color: #ffffff;
+$input-search-focus-bg-color: #484848;
+$input-search-highlight-color: #353535;
+$input-search-result-bg-color: #2f2f2f;
+$input-search-result-border-bottom: 1px solid #373737;
+
+// Range
+$range-thumb-color: $accent-color;
+$range-track-color: rgba($accent-color, 0.35);
+$range-text-color: #000000;
+$range-progress-color: $accent-color;
+$range-box-shadow-color: rgba(187, 134, 252, .16);
+
+// Switch
+$switch-bg-color: $accent-color;
+$switch-checked-lever-bg: rgba($accent-color, 0.35);
+$switch-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba($accent-color, .1);
+$switch-disabled-opacity: 0.4;
+$switch-focusable-box-shadow-on: 0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba($accent-color, .1);
+$switch-focusable-box-shadow-off:  0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba(255, 255, 255, 0.08);
+
+// Tabs
+$tabs-bg-color: #272727;
+$tabs-item-color: $accent-color;
+$table-indicator-color: $accent-color;
+
+// Toasts
+$toast-bg-color: #e4e4e4;
+$toast-text-color: #000000;
+
+// Tooltip
+$tooltip-bg-color: #aaaaaa;
+$tooltip-text-color: #212121;
+
+// Table of Contents
+$table-of-contents-color: $accent-color;
+
+// Input Fields
+$input-field-color: $accent-color;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

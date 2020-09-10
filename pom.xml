@@ -303,6 +303,19 @@
 									<generateSourceMap>false</generateSourceMap>
 								</configuration>
 							</execution>
+							<!-- Dark Theme -->
+							<execution>
+								<id>dark-theme</id>
+								<phase>package</phase>
+								<goals>
+									<goal>compile</goal>
+								</goals>
+								<configuration>
+									<inputPath>${sass.source}/dark</inputPath>
+									<outputPath>${sass.target}/dark/css</outputPath>
+									<generateSourceMap>false</generateSourceMap>
+								</configuration>
+							</execution>
 						</executions>
 					</plugin>
 
