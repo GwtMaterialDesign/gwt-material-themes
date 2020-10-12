@@ -10441,10 +10441,10 @@ i[class*="waves-"].material-icons {
 /**
 * Carousel
 **/
-.slick-dots li {
+ul.slick-dots li {
   background: #c0aca5; }
 
-.slick-dots li.slick-active {
+ul.slick-dots li.slick-active {
   background: #8d6e63; }
 
 /**
@@ -10571,7 +10571,7 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.di
 /**
 * Window
 **/
-.window .window-toolbar {
+div.window .window-toolbar {
   background-color: #8d6e63; }
 
 /* ==========================================================================
@@ -10580,7 +10580,7 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.di
 /**
 * Group Toggle Button
 **/
-.group-toggle-button button.active {
+.group-toggle-button button.btn.active, .group-toggle-button button.active.btn-large {
   background: #8d6e63; }
 
 /**
@@ -10601,3 +10601,23 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.di
   background: #8d6e63;
   -webkit-animation: 1.5s cubic-bezier(0.08, -0.18, 0.91, 1.14) barbounce alternate infinite;
   animation: 1.5s cubic-bezier(0.08, -0.18, 0.91, 1.14) barbounce alternate infinite; }
+
+/**
+* Date Range
+**/
+div.daterangepicker td.active,
+div.daterangepicker td.active:hover,
+div.daterangepicker td.in-range.active:not(.off),
+div.daterangepicker .ranges li.active {
+  background-color: #a1887f; }
+
+div.daterangepicker td.in-range,
+div.daterangepicker td.available.in-range:hover:not(.active) {
+  background-color: rgba(161, 136, 127, 0.2);
+  color: #a1887f; }
+
+div.drp-buttons button.cancelBtn {
+  color: #a1887f; }
+
+div.daterangepicker td.available:hover:after {
+  border: 2px solid #a1887f; }

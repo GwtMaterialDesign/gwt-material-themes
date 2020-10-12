@@ -1,10 +1,10 @@
 /**
 * Carousel
 **/
-.slick-dots li {
+ul.slick-dots li {
   background: $carousel-dots-color;
 }
 
-.slick-dots li.slick-active {
+ul.slick-dots li.slick-active {
   background: $carousel-dots-color-active;
 }

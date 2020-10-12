@@ -1,0 +1,23 @@
+/**
+* Date Range
+**/
+div.daterangepicker td.active,
+div.daterangepicker td.active:hover,
+div.daterangepicker td.in-range.active:not(.off),
+div.daterangepicker .ranges li.active {
+  background-color: $date-range-bg-color;
+}
+
+div.daterangepicker td.in-range,
+div.daterangepicker td.available.in-range:hover:not(.active) {
+  background-color: rgba($date-range-bg-color, 0.2);
+  color: $date-range-bg-color;
+}
+
+div.drp-buttons button.cancelBtn {
+  color: $date-range-bg-color;
+}
+
+div.daterangepicker td.available:hover:after {
+  border: 2px solid $date-range-bg-color;
+}
