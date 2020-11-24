@@ -97,7 +97,7 @@ input:-webkit-autofill {
 }
 
 .input-field.disabled label {
-  color: rgba(0, 0, 0, 0.26) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 /**
@@ -598,4 +598,11 @@ input[type=range]::-ms-fill-upper{
 input[type=range]::-ms-thumb {
   transform: translateY(18px);
   margin-bottom: 22px;
+}
+
+/** Copy to Clipboard **/
+.copy-to-clipboard {
+  position: absolute;
+  top: 8px;
+  right: 0;
 }
