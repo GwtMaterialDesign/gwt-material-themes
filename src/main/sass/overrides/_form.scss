@@ -583,13 +583,14 @@ input[type=range]:hover::-moz-range-thumb {
 
 /** Range IE Support **/
 input[type=range]::-ms-track {
-  height:32px;
+  height: 32px;
   position: absolute;
   background: transparent;
   border: transparent;
 }
+
 input[type=range]::-ms-fill-lower,
-input[type=range]::-ms-fill-upper{
+input[type=range]::-ms-fill-upper {
   border: none;
   height: 0px;
   background: transparent;
@@ -607,11 +608,13 @@ input[type=range]::-ms-thumb {
   right: -20px;
 }
 
-.input-field:hover i.copy-command:not(.on-always) {
+.input-field:hover i.copy-command.on-readonly-hover,
+.input-field:hover i.copy-command.on-always-hover {
   opacity: 1;
 }
 
-i.copy-command:not(.on-always) {
+i.copy-command.on-readonly-hover
+i.copy-command.on-always-hover {
   opacity: 0;
   transition: 400ms;
 }
