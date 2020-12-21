@@ -1,3 +1,9 @@
+/**
+* Variables
+**/
+/**
+* Address Lookup
+**/
 .pac-container {
   background-color: #2f2f2f;
   color: white !important;
@@ -13,6 +19,9 @@
 .pac-item-query {
   color: #fff; }
 
+/**
+* CheckMark
+**/
 .sa-icon.sa-success::before,
 .sa-icon.sa-success::after {
   background-color: #292929; }
@@ -20,6 +29,9 @@
 .sa-icon.sa-success .sa-fix {
   background-color: #292929; }
 
+/**
+* Date Range Picker
+**/
 .daterangepicker,
 .daterangepicker .calendar-table,
 .daterangepicker td.off,
@@ -94,7 +106,9 @@ button.cancelBtn {
 .daterangepicker .select2-container--disabled .select2-selection__rendered {
   color: #9c9c9c !important; }
 
-/** Ranges **/
+/**
+* Ranges
+**/
 .daterangepicker .ranges li.active {
   background-color: #bb86fc !important;
   color: #000000; }
@@ -108,6 +122,9 @@ button.cancelBtn {
 .daterangepicker.show-ranges .drp-calendar.left {
   border-left: 1px solid #292929 !important; }
 
+/**
+* Group Toggle
+**/
 .group-toggle-button .wrapper {
   background: #424242; }
 
@@ -124,9 +141,15 @@ button.cancelBtn {
   background-color: #424242;
   border-right: 1px solid #292929; }
 
+/**
+* Inline Search
+**/
 nav .nav-wrapper ul li:hover .inline-search i {
   background-color: transparent !important; }
 
+/**
+* Kanban
+**/
 .kanban-board {
   background: #2f2f2f;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -134,6 +157,9 @@ nav .nav-wrapper ul li:hover .inline-search i {
 .kanban-item {
   background: #1e1e1e; }
 
+/**
+* Content Placeholder
+**/
 .content-placeholder {
   display: inline-block;
   width: 100%;
@@ -155,6 +181,9 @@ nav .nav-wrapper ul li:hover .inline-search i {
   height: inherit;
   position: relative; }
 
+/**
+* Progress Line Bar
+**/
 .progress-line-bar .progress-item.active {
   background: #bb86fc !important; }
 
@@ -162,6 +191,9 @@ nav .nav-wrapper ul li:hover .inline-search i {
   border-right: 1px solid #292929 !important;
   background: #3e3e3e !important; }
 
+/**
+* Screen Keyboard
+**/
 .simple-keyboard {
   background-color: #515151; }
 
@@ -170,12 +202,15 @@ nav .nav-wrapper ul li:hover .inline-search i {
   color: white; }
 
 .simple-keyboard .hg-button:active {
-  background: #1c4995;
+  background: #bb86fc;
   color: white; }
 
 .simple-keyboard + .simple-keyboard-preview {
-  background: #1c4995; }
+  background: #bb86fc; }
 
+/**
+* Tag Label
+**/
 .tag-label {
   background: #2f2f2f;
   color: #ffffff; }
@@ -186,8 +221,11 @@ nav .nav-wrapper ul li:hover .inline-search i {
 .tag-label.arrow-right:after {
   border-color: transparent transparent transparent #2f2f2f !important; }
 
+/**
+* Timer Progress
+**/
 .timer-progress {
-  background-color: #4c3f5b; }
+  background-color: rgba(187, 134, 252, 0.1); }
 
 .timer-progress.bouncing .fill {
   background: #bb86fc; }

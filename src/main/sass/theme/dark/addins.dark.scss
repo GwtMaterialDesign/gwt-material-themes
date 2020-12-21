@@ -1,5 +1,13 @@
-// TODO: Convert to sass variables
-// AutoComplete
+@charset "UTF-8";
+
+/**
+* Variables
+**/
+@import "../../variables/addins_variables_dark";
+
+/**
+* AutoComplete
+**/
 .gwt-SuggestBoxPopup {
   background: #2f2f2f;
 }
@@ -13,7 +21,9 @@ ul.multiValueSuggestBox-list input[type=text]:focus:not([readonly]) {
   box-shadow: none !important;
 }
 
-// Bubble
+/**
+* Bubble
+**/
 .bubble {
   background: #424242;
   color: #ffffff;
@@ -33,7 +43,9 @@ ul.multiValueSuggestBox-list input[type=text]:focus:not([readonly]) {
   border-top-color: #424242;
 }
 
-// ComboBox
+/**
+* ComboBox
+**/
 span.select2-dropdown {
   background-color: #2f2f2f;
 }
@@ -51,8 +63,8 @@ span.select2-dropdown {
 }
 
 .input-field.combobox .select2-container--focus .select2-selection {
-  border-bottom: 1px solid #BB86FC;
-  box-shadow: 0 1px 0 0 #BB86FC;
+  border-bottom: 1px solid $combobox-border-color;
+  box-shadow: 0 1px 0 0 $combobox-border-color;
 }
 
 .input-field input[type=search]:focus {
@@ -62,8 +74,8 @@ span.select2-dropdown {
 }
 
 ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:after {
-  border: 2px solid #BB86FC;
-  background-color: #BB86FC;
+  border: 2px solid $combobox-border-color;
+  background-color: $combobox-border-color;
 }
 
 ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:before {
@@ -93,7 +105,9 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
   box-shadow: none;
 }
 
-/** Outlined **/
+/**
+* Outlined
+**/
 .input-field.outlined.combobox label.select2label {
   background-color: #292929;
 }
@@ -102,7 +116,9 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
   border: 1px solid #7b7b7b;
 }
 
-/** Filled **/
+/**
+* Filled
+**/
 .input-field.filled.combobox .select2-container {
   background: #2f2f2f;
 }
@@ -111,11 +127,13 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
   background: #484848;
 }
 
-// Carousel
+/**
+* Carousel
+**/
 .material-carousel .carousel-next-arrow,
 .material-carousel .carousel-prev-arrow,
 .slick-dots li.slick-active{
-  background-color: #bb86fc;
+  background-color: $carousel-dots-color;
 }
 
 .material-carousel:not(.carousel-image) .carousel-next-arrow i,
@@ -124,10 +142,12 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
 }
 
 .slick-dots li {
-  background-color: rgba(187, 134, 252, 0.23);
+  background-color: $carousel-dots-color-inactive;
 }
 
-// FileUploader
+/**
+* FileUploader
+**/
 .fileuploader {
   background: #1e1e1e;
 }
@@ -173,12 +193,16 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
   color: #ffffff !important;
 }
 
-// Overlay
+/**
+* Overlay
+**/
 .overlay-panel{
   background: #383838;
 }
 
-// TimePicker
+/**
+* TimePicker
+**/
 .lolliclock-header {
   background-color: #1e1f22 !important
 }
@@ -192,7 +216,7 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
 }
 
 .lolliclock-active-button-background {
-  background: #bb86fc !important
+  background: $time-picker-button-color !important
 }
 
 .lolliclock-btn-text {
@@ -204,15 +228,15 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
 }
 
 .lolliclock-button {
-  color: #bb86fc !important
+  color: $time-picker-button-color !important
 }
 
 .lolliclock-canvas-bg {
-  fill: #d6b5ff !important
+  fill: $time-picker-highlight-number-color !important
 }
 
 .lolliclock-canvas-fg {
-  fill: #bb86fc !important
+  fill: $time-picker-button-color !important
 }
 
 .lolliclock-canvas line {
@@ -220,20 +244,24 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
 }
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
-  background-color: #bb86fc !important
+  background-color: $time-picker-button-color !important
 }
 
 .input-field.timepicker input.valid {
-  border-bottom: 1px solid #bb86fc;
-  box-shadow: 0 1px 0 0 #bb86fc;
+  border-bottom: 1px solid $time-picker-button-color;
+  box-shadow: 0 1px 0 0 $time-picker-button-color;
 }
 
-// Rating
+/**
+* Rating
+**/
 .material-rating {
-  color: #bb86fc;
+  color: $rating-color;
 }
 
-// RichEditor
+/**
+* RichEditor
+**/
 .note-editor {
   border-left: 3px solid #424242;
   border-bottom: 3px solid #424242;
@@ -269,7 +297,9 @@ ul.select2-results__options[aria-multiselectable=true] li.select2-results__optio
   background-color: #2f2f2f;
 }
 
-/** Dialog **/
+/**
+* Dialog
+**/
 .editorDialogs .modal .modal-footer, .note-editor .modal .modal-footer,
 .editorDialogs .modal, .note-editor .modal {
   background-color: #383838;
@@ -310,7 +340,7 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.di
 }
 .editorDialogs .modal .btn:hover, .editorDialogs .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn-large:hover,
 .note-editor .modal .btn.modal-close:hover, .editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
-  color: #bb86fc !important;
+  color: $rich-editor-button-color !important;
 }
 
 .editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .editorDialogs .modal .btn-large:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn.modal-close:hover, .note-editor .modal .modal-close.btn-large:hover, .note-editor .modal .file-field .btn:hover, .note-editor .modal .file-field .btn-large:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
@@ -341,7 +371,9 @@ table.bordered>thead>tr, table.bordered>tbody>tr {
   background: #3a3a3a;
 }
 
-// Stepper
+/**
+* Stepper
+**/
 .stepper.horizontal .step .step-header {
   background: #292929;
 }
@@ -359,12 +391,12 @@ table.bordered>thead>tr, table.bordered>tbody>tr {
 }
 
 .stepper .step > div:first-child .circle {
-  background: #bb86fc !important;
+  background: $stepper-active-color !important;
 }
 
 .stepper .step.success > div:first-child i,
 .stepper .step.success .title, .stepper .step.success .description {
-  color: #bb86fc !important;
+  color: $stepper-active-color !important;
 }
 
 .feedback {
@@ -376,24 +408,32 @@ table.bordered>thead>tr, table.bordered>tbody>tr {
 }
 
 
-// Split Panel
+/**
+* Split Panel
+**/
 .TouchSplitter,
 .TouchSplitter > div {
   background: #353535;
 }
 
-// Subheader
+/**
+* Subheader
+**/
 .subheader,
 .subheader-static{
   background-color: #2f2f2f;
 }
 
-// Tree
+/**
+* Tree
+**/
 .tree-item i {
-  color: #BB86FC;
+  color: $tree-item-color;
 }
 
-// Window
+/**
+* Window
+**/
 .window .window-toolbar {
   background-color: #1e1e1e;
 }
