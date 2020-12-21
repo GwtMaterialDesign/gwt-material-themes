@@ -19,6 +19,14 @@ i[tabindex] {
   overflow: visible;
 }
 
+i[tabindex]:hover:after {
+  opacity: 1;
+  width: 32px;
+  height: 32px;
+  top: calc(50% - 17px);
+  left: calc(50% - 16px);
+}
+
 .button-collapse[tabindex]:after,
 i[tabindex]:after,
 .tabs .tab a[tabindex]:before,

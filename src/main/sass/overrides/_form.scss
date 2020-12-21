@@ -422,6 +422,10 @@ blockquote {
   opacity: 0 !important;
 }
 
+.checkbox {
+  margin-bottom: 20px;
+}
+
 /**
 * ReadOnly States
 **/
@@ -618,6 +622,13 @@ i.copy-command.on-readonly-hover,
 i.copy-command.on-always-hover {
   opacity: 0;
   transition: 400ms;
+}
+
+i[tabindex].copy-command {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 999;
 }
 
 @media screen and (max-width: 900px) {
