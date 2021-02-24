@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+// Variables;
+@import "../../variables/datatable_variables_dark";
+
+/** Dark Mode **/
+section.table-container .top-panel,
+.table-container, .table-body,
+table.table thead tr th {
+  background-color: $table-global-bg-color;
+  color: $table-global-text-color;
+}
+
+table.table tbody td {
+  color: $table-global-text-color;
+}
+
+table.table tbody tr.data-row:hover {
+  background-color: $table-row-hover-bg-color;
+  color: $table-global-text-color;
+}
+
+table.table tbody tr.data-row td.hover {
+  background-color: $table-row-hover-bg-color;
+  color: $table-global-text-color;
+}
+
+table.table tbody tr.data-row:hover {
+  background-color: $table-row-hover-bg-color;
+}
+
+.table-container .top-panel {
+  border-bottom: $table-top-panel-border-bottom;
+}
+
+table.table thead {
+  border-bottom: $table-thead-border-bottom;
+}
+
+table.table tbody tr.data-row {
+  border-bottom: $table-tr-border-bottom;
+}
+
+table.table tbody tr.selected,
+table.table tbody tr.selected td {
+  background-color: $table-row-selected-bg-color !important;
+}
+
+table.striped > tbody > tr:nth-child(odd) {
+  background-color: $table-row-striped-bg-color;
+}
+
+table.table tbody tr.subheader {
+  background-color: $table-subheader-bg-color;
+  border-bottom: $table-subheader-border;
+  color: $table-subheader-text-color;
+}
+
+table.table tbody > div {
+  background: transparent !important;
+}
+
+table.table thead tr th.sortable:hover,
+table.table thead tr th,
+table.table thead th.selected {
+  color: $table-thead-text-color;
+}
+
+table.table tbody tr.expansion td div .content {
+  background-color: $table-row-expansion-bg-color;
+}
+
+table.table tbody tr.expansion td div.expanded {
+  border-bottom: none;
+}
+
+/** Frozen **/
+table.striped > tbody > tr:nth-child(odd) td.frozen-col {
+  background-color: $table-frozen-column-bg-color !important;
+}
+
+table tr td.frozen-col {
+  border-bottom: 1px solid $table-frozen-column-bg-color !important;
+}
+
+table tr.selected td.frozen-col {
+  background: $table-frozen-column-selected-bg-color !important;
+}
+
+.inner-shadow {
+  -moz-box-shadow: $table-frozen-column-inner-shadow;
+  -webkit-box-shadow: $table-frozen-column-inner-shadow;
+  box-shadow: $table-frozen-column-inner-shadow;
+}
+
+table tr.stickyExclude {
+  height: 2px;
+  background-color: transparent !important;
+}
+
+/** Data Pager **/
+.data-pager .input-field .select-wrapper input.select-dropdown,
+.data-pager .num-page-panel .input-field input[type=number] {
+  color: $table-pager-field-text-color;
+  border-bottom: $table-pager-field-border;
+}
+
+.table-container .data-pager {
+  border: none;
+}
+
+.data-pager .action-page-panel i.disabled {
+  background: $table-pager-action-disabled-bg-color !important;
+  color: $table-pager-action-disabled-text-color !important;
+}
+
+.data-pager .action-page-panel i {
+  color: $table-pager-action-text-color;
+}
+
+.data-pager .action-page-panel i:hover {
+  color: $table-pager-action-text-hover-color;
+}
+
+@media only screen and (max-width: 520px), (max-device-width: 519px) and (min-device-width: 0px) {
+  table.table tbody {
+    background: $table-responsive-bg-color;
+  }
+
+  .selection-none table.table tbody tr.data-row, table.table tbody tr.data-row {
+    background: $table-responsive-row-color;
+  }
+
+  table.table tbody td {
+    border-top: $table-responsive-td-border-top;
+  }
+
+  table.table .cell {
+    color: $table-responsive-td-text-color;
+  }
+
+  tr.data-row td:before {
+    color: $table-responsive-td-before-text-color;
+  }
+
+  table.table tbody tr.data-row.selected,
+  .selection-none table.table tbody tr.data-row, table.table tbody tr.data-row,
+  table.table tbody tr.data-row:hover, table.table tbody tr.selected td, table.table tbody tr.selected td.hover {
+    background-color: $table-responsive-row-selected-bg-color !important;
+  }
+
+  tbody tr td#colex #expand {
+    background: $table-responsive-row-expansion-bg-color;
+  }
+
+  table.table tbody tr.data-row #col0:not([data-title]) {
+    background: $table-responsive-selection-bg-color;
+  }
+}
+
+/** Focusable Datatable **/
+table.table tbody tr.subheader.focus-visible,
+table.table tbody tr.data-row.focus-visible {
+  background-color: $table-focusable-row !important;
+}
+
+table.table thead tr th.sortable.focus-visible {
+  color: $table-focusable-thead-text-color;
+}
+
+table.table tr.loading-row .content-placeholder {
+  background: $table-content-placeholder-webkit-gradient;
+  background: $table-content-placeholder-webkit-linear-gradient;
+  background: $table-content-placeholder-linear-gradient;
+}

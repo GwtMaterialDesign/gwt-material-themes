@@ -1,0 +1,186 @@
+// Colors
+$accent-color: #bb86fc !default;
+$link-color: $accent-color;
+
+// Body
+$body-bg-color: #292929;
+$body-text-color: #ffffff;
+
+// NavBar
+$navbar-bg-color: #272727;
+$navbar-text-color: #ffffff;
+$navbar-icon-hover-color: #1e1e1e;
+
+// SideNav
+$sidenav-bg-color: #2e2e2e;
+$sidenav-text-color: rgba(255, 255, 255, .9);
+$sidenav-item-hover: rgba($accent-color, 0.1);
+$sidenav-item-focus: #272727;
+
+// Badges
+$badge-bg-color: $accent-color !default;
+$badge-text-color: #000000;
+
+// Scroll Bar
+$scrollbar-color: #1e1e1e;
+$scrollbar-thumb-color: #464646;
+$scrollbar-track-color: #2e2e2e;
+
+// Card
+$card-bg-color: #1e1e1e;
+$card-text-color: #ffffff;
+$card-secondary-text-color: rgba(255, 255, 255, .6);
+$card-icon-color: #ffffff;
+$card-link-color: $accent-color;
+$card-collection-bg-color: #2b2b2b;
+$card-collection-text-color: #ffffff;
+
+// Buttons
+$button-color: $accent-color;
+$button-text-color: #000000;
+$button-outlined-bg-color: transparent;
+$button-outlined-text-color: $accent-color;
+$button-outlined-border: 1px solid $accent-color;
+$button-outlined-disabled-bg-color: rgba($accent-color, 0.4);
+$button-disabled-bg-color: $accent-color;
+$button-disabled-text-color: rgba(0, 0, 0, .7);
+$button-disabled-opacity: 0.4;
+$button-floating-icon-disabled-text-color: rgba(0, 0, 0, .7);
+$button-flat-color: $accent-color;
+$button-flat-disabled-color: transparent;
+$button-flat-disabled-text-color: rgba($accent-color, 0.3);
+
+// CheckBox
+$checkbox-color: $accent-color;
+$checkbox-border-color: #000000;
+$checkbox-focus-color: rgba(255, 255, 255, 0.1);
+
+// Chip
+$chip-bg-color: #232323;
+$chip-text-color: #ffffff;
+$chip-letter-color: #424242;
+$chip-active-bg-color: rgba($accent-color, 0.25);
+$chip-active-text-color: $accent-color;
+$chip-outlined-bg-color: transparent;
+$chip-outlined-border: 1px solid #4c4c4ce9;
+
+// Collapsible
+$collapsible-header-color: #2f2f2f;
+$collapsible-header-focusable-color: #353535;
+$collapsible-header-text-color: #ffffff;
+$collapsible-border-color: #2f2f2f;
+$collapsible-body-color: #353535;
+
+// Collection
+$collection-bg-color: #2f2f2f;
+$collection-active-bg-color: rgba($accent-color, 0.1);
+$collection-active-text-color: $accent-color;
+$collection-text-color: #ffffff;
+$collection-header-border: 1px solid #353535;
+$collection-focusable-color: #353535;
+
+// DatePicker
+$datepicker-weekday-bg: #141414;
+$datepicker-pickerbox-bg: #2e3033;
+$datepicker-pickerbox-border: 1px solid #1e1f22;
+$datepicker-date-bg: #1e1f22;
+$datepicker-header-text-color: rgba(255, 255, 255, .6);
+
+// Dialog
+$dialog-bg-color: #383838;
+
+// Dropdown
+$dropdown-bg-color: #2f2f2f;
+$dropdown-text-color: #ffffff;
+$dropdown-hover-bg-color: #353535;
+$dropdown-separator: #292929;
+$dropdown-active-bg-color: #1e1e1e;
+
+// Footer
+$footer-bg-color: #2f2f2f;
+
+// Select
+$select-bg-color: #292929;
+$select-disabled-border-bottom: 1px dotted rgba(255, 255, 255, .3);
+$select-disabled-text-color: #fff;
+
+// Loader
+$loader-wrapper-bg-color: rgba(0, 0, 0, .701961);
+$spinner-layer-border-color: $accent-color;
+
+// Media Slider
+$slider-item-color: #4e4e4e;
+$slider-active-item-color: $accent-color;
+
+// Progress
+$progress-bar-bg-color: rgba($accent-color, 0.3);
+$progress-bar-color: $accent-color;
+
+// Radio
+$radio-text-color: rgba(255, 255, 255, .87);
+$radio-bg-color: $accent-color;
+$radio-disabled-text-color: rgba(179, 179, 179, .26);
+$radio-disabled-bg-color: rgba(150, 150, 150, .26);
+$radio-focusable-box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.1);
+
+// Search
+$input-search-bg-color: #2f2f2f;
+$input-search-text-color: #ffffff;
+$input-search-focus-bg-color: #484848;
+$input-search-highlight-color: #353535;
+$input-search-result-bg-color: #2f2f2f;
+$input-search-result-border-bottom: 1px solid #373737;
+
+// Range
+$range-thumb-color: $accent-color;
+$range-track-color: rgba($accent-color, 0.35);
+$range-text-color: #000000;
+$range-progress-color: $accent-color;
+$range-box-shadow-color: rgba(187, 134, 252, .16);
+
+// Switch
+$switch-bg-color: $accent-color;
+$switch-checked-lever-bg: rgba($accent-color, 0.35);
+$switch-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba($accent-color, .1);
+$switch-disabled-opacity: 0.4;
+$switch-focusable-box-shadow-on: 0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba($accent-color, .1);
+$switch-focusable-box-shadow-off:  0 1px 3px 1px rgba(255, 255, 255, 0.4), 0 0 0 15px rgba(255, 255, 255, 0.08);
+
+// Tabs
+$tabs-bg-color: #272727;
+$tabs-item-color: $accent-color;
+$table-indicator-color: $accent-color;
+
+// Toasts
+$toast-bg-color: #e4e4e4;
+$toast-text-color: #000000;
+
+// Tooltip
+$tooltip-bg-color: #aaaaaa;
+$tooltip-text-color: #212121;
+
+// Table of Contents
+$table-of-contents-color: $accent-color;
+
+// Input Fields
+$input-field-color: $accent-color;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
