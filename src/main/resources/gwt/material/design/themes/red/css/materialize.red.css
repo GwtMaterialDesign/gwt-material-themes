@@ -10291,6 +10291,32 @@ i[class*="waves-"].material-icons {
 .weatherContainer .card {
   background-color: initial !important; }
 
+.toast.top-left,
+.toast.top-right,
+.toast.bottom-left,
+.toast.bottom-right {
+  float: right;
+  position: fixed;
+  max-width: 800px; }
+
+.toast.bottom-left {
+  left: 32px;
+  transform: translateY(90vh); }
+
+.toast.bottom-right {
+  right: 32px;
+  left: unset;
+  transform: translateY(90vh); }
+
+.toast.top-left {
+  left: 32px;
+  transform: translateY(8vh); }
+
+.toast.top-right {
+  right: 32px;
+  left: unset;
+  transform: translateY(8vh); }
+
 /**
 * Media Queries
 **/
