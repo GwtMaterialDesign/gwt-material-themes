@@ -27,7 +27,7 @@
 		<connection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</connection>
 		<developerConnection>scm:git:git@github.com:GwtMaterialDesign/gwt-material-themes.git</developerConnection>
 		<url>http://github.com/GwtMaterialDesign/gwt-material-themes</url>
-		<tag>v2.5.0</tag>
+		<tag>v2.5.0-rc1</tag>
 
 	</scm>
 

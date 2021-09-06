@@ -4,7 +4,7 @@
 
 Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material <br>
 
-[![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes)
+[![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-themes) [![Join us](https://img.shields.io/badge/slack-channel-purple)](https://gmd-project.slack.com)
 
 
 ## Usage
@@ -12,7 +12,7 @@ Gwt Material Design Themes for https://github.com/GwtMaterialDesign/gwt-material
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-themes</artifactId>
-    <version>2.5.0</version>
+    <version>2.5.0-rc1</version>
 </dependency>
 ```
 
@@ -46,6 +46,3 @@ A ComboBox widget that contains lists of theme selection.
 A Custom theme manager to store selected theme to browser’s cache.
 [Theme Manager](https://github.com/GwtMaterialDesign/gwt-material-demo/blob/release_2.0/src/main/java/gwt/material/design/demo/client/ThemeManager.java)
 
-
-## Follow Us
-<a href="https://plus.google.com/u/0/communities/108005250093449814286"> Google Plus</a>
