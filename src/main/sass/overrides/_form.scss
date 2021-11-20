@@ -24,6 +24,10 @@
   display: none;
 }
 
+.input-field.disabled i.clear-field {
+  display: none !important;
+}
+
 .col .input-field label {
   left: 0px;
 }
